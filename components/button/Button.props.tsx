@@ -1,4 +1,5 @@
 import { ReactNode } from 'react'
+
 import { Type } from './Button.types'
 
 export interface ButtonProps {

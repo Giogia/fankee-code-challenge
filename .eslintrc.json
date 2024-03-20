@@ -1,12 +1,53 @@
 {
+  "env": {
+    "browser": true
+  },
   "extends": [
-    "next/core-web-vitals",
-    "plugin:storybook/recommended"
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:storybook/recommended",
+    "next/core-web-vitals"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint",
+    "import",
+    "storybook",
+    "react"
   ],
   "rules": {
+    "indent": [
+      "error",
+      3
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
     "semi": [
       "error",
       "never"
-    ]
+    ],
+    "import/order": ["error", {
+      "groups": ["type", "builtin", "external", "parent", "sibling", "index"],
+      "pathGroups": [
+        {
+          "pattern": "@/**",
+          "group": "parent",
+          "position": "before"
+        }
+      ],
+      "pathGroupsExcludedImportTypes": ["builtin"],
+      "newlines-between": "always",
+      "alphabetize": {
+        "order": "asc",
+        "caseInsensitive": true
+      }
+    }]
   }
 }

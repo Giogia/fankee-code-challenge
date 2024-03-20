@@ -1,58 +1,60 @@
 import type { Meta, StoryObj } from '@storybook/react'
+
 import { expect, fn, userEvent, within, waitFor } from '@storybook/test'
+
 import { Input } from './Input'
 
 const { Type } = Input
 
 const meta = {
-  title: 'Input',
-  component: Input,
-  argTypes: {},
-  args: {
-    ...Input.defaultProps,
-    onChange: fn()
-  }
+   title: 'Input',
+   component: Input,
+   argTypes: {},
+   args: {
+      ...Input.defaultProps,
+      onChange: fn()
+   }
 } satisfies Meta<typeof Input>
 
 export default meta
 type Story = StoryObj<typeof meta>
 
 export const Text: Story = {
-  args: {
-    type: Type.Text,
-    placeholder: 'Insert text'
-  },
-  play: async ({ canvasElement, args }) => {
-    const canvas = within(canvasElement)
+   args: {
+      type: Type.Text,
+      placeholder: 'Insert text'
+   },
+   play: async ({ canvasElement, args }) => {
+      const canvas = within(canvasElement)
 
-    const input = canvas.getByRole('textbox')
-    expect(input).toBeVisible()
-    expect(input).toHaveAttribute('placeholder', args.placeholder)
+      const input = canvas.getByRole('textbox')
+      expect(input).toBeVisible()
+      expect(input).toHaveAttribute('placeholder', args.placeholder)
 
-    const userInput = 'test'
+      const userInput = 'test'
 
-    await userEvent.type(input, userInput)
-    await waitFor(() => expect(args.onChange).toHaveBeenCalledTimes(userInput.length))
-    await waitFor(() => expect(args.onChange).toHaveBeenCalledWith(userInput))
-},
+      await userEvent.type(input, userInput)
+      await waitFor(() => expect(args.onChange).toHaveBeenCalledTimes(userInput.length))
+      await waitFor(() => expect(args.onChange).toHaveBeenCalledWith(userInput))
+   },
 }
 
 export const Email: Story = {
-  args: {
-    type: Type.Email,
-    placeholder: 'Insert email'
-  },
-  play: async ({ canvasElement, args }) => {
-    const canvas = within(canvasElement)
+   args: {
+      type: Type.Email,
+      placeholder: 'Insert email'
+   },
+   play: async ({ canvasElement, args }) => {
+      const canvas = within(canvasElement)
 
-    const input = canvas.getByRole('textbox')
-    expect(input).toBeVisible()
-    expect(input).toHaveAttribute('placeholder', args.placeholder)
+      const input = canvas.getByRole('textbox')
+      expect(input).toBeVisible()
+      expect(input).toHaveAttribute('placeholder', args.placeholder)
 
-    const userInput = 'test@mail.com'
+      const userInput = 'test@mail.com'
 
-    await userEvent.type(input, userInput)
-    await waitFor(() => expect(args.onChange).toHaveBeenCalledTimes(userInput.length))
-    await waitFor(() => expect(args.onChange).toHaveBeenCalledWith(userInput))
-  },
+      await userEvent.type(input, userInput)
+      await waitFor(() => expect(args.onChange).toHaveBeenCalledTimes(userInput.length))
+      await waitFor(() => expect(args.onChange).toHaveBeenCalledWith(userInput))
+   },
 }
