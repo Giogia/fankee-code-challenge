@@ -1,7 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { expect, fn, userEvent, within, waitFor } from '@storybook/test'
 import { Button } from './Button'
-import { Type } from './Button.types'
+
+const { Type } = Button
 
 const meta = {
   title: 'Button',
