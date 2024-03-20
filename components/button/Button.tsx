@@ -1,13 +1,13 @@
-import React from 'react'
 import classnames from 'classnames'
 
 import { ButtonProps } from './Button.props'
 import { Type } from './Button.types'
+import { Typography } from '../typography/Typography'
 
 const { Primary, Neutral } = Type
 
 /**
- * Primary UI component for user interaction
+ * UI component for user interaction
  */
 export const Button = ({
   label,
@@ -20,16 +20,17 @@ export const Button = ({
     <button
       type="button"
       className={classnames([
-        'rounded-full inline-flex gap-2 px-5 py-2.5',
-        'text-sm text-gray-800 hover:text-gray-400',
-        'cursor-pointer transition duration-250 ease-in-out',
+        'rounded-full inline-flex gap-2 px-5 py-2.5 cursor-pointer',
+        'hover:text-gray-400',
+        'active:scale-95',
+        'transition duration-250 ease-in-out',
         type === Primary && 'bg-yellow-400 hover:bg-yellow-300',
         type === Neutral && 'bg-white'
       ])}
       onClick={onClick}
     >
       {icon}
-      {label}
+      {label && <Typography color={Typography.Color.Gray} text={label} />}
     </button>
   )
 }
@@ -37,3 +38,5 @@ export const Button = ({
 Button.defaultProps = {
   type: Type.Primary,
 }
+
+Button.Type = Type
