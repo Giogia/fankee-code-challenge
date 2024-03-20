@@ -12,7 +12,8 @@ const { Primary, Neutral } = Type
 export const Button = ({
   label,
   icon,
-  type
+  type,
+  onClick
 }: ButtonProps) => {
 
   return (
@@ -25,6 +26,7 @@ export const Button = ({
         type === Primary && 'bg-yellow-400 hover:bg-yellow-300',
         type === Neutral && 'bg-white'
       ])}
+      onClick={onClick}
     >
       {icon}
       {label}
