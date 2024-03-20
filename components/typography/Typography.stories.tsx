@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { expect, within } from '@storybook/test'
 import { Typography } from './Typography'
 
-const { Hierarchy } = Typography
+const { Color, Hierarchy } = Typography
 
 const meta = {
   title: 'Typography',
@@ -10,6 +10,7 @@ const meta = {
   argTypes: {},
   args: {
     ...Typography.defaultProps,
+    color: Color.White,
     text: 'Text',
   }
 } satisfies Meta<typeof Typography>

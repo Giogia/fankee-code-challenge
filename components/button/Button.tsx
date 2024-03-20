@@ -30,7 +30,7 @@ export const Button = ({
       onClick={onClick}
     >
       {icon}
-      {label && <Typography color={Typography.Color.Gray} text={label} />}
+      {label && <Typography text={label} />}
     </button>
   )
 }
