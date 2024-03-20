@@ -31,7 +31,7 @@ export const Typography = ({
 
 Typography.defaultProps = {
   hierarchy: BodyS,
-  color: Color.White,
+  color: Color.Gray,
 }
 
 Typography.Color = Color
