@@ -37,3 +37,6 @@ next-env.d.ts
 
 # storybook
 *storybook.log
+
+# env vars
+.env.locale
