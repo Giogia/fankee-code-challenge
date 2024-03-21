@@ -1,6 +1,8 @@
+import { ChangeEvent, ComponentProps } from 'react'
+
 import { Type } from './Input.types'
 
-export interface InputProps {
+export interface InputProps extends ComponentProps<'input'> {
   /**
    * Placeholder text for the input field.
    */
@@ -16,5 +18,5 @@ export interface InputProps {
   /**
    * Optional change handler that is called when the input value changes.
    */
-  onChange?: (value: string) => void
+  onChange?: (e: ChangeEvent<HTMLInputElement>) => void
 }

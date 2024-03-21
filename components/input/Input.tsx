@@ -10,7 +10,8 @@ export const Input = ({
    type,
    placeholder,
    value,
-   onChange
+   onChange,
+   ...props
 }: InputProps) => {
 
    return (
@@ -26,7 +27,8 @@ export const Input = ({
          ])}
          placeholder={placeholder}
          value={value}
-         onChange={e => onChange?.(e?.target?.value)}
+         onChange={onChange}
+         {...props}
       />
    )
 }

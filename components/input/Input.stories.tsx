@@ -35,7 +35,6 @@ export const Text: Story = {
 
       await userEvent.type(input, userInput)
       await waitFor(() => expect(args.onChange).toHaveBeenCalledTimes(userInput.length))
-      await waitFor(() => expect(args.onChange).toHaveBeenCalledWith(userInput))
    },
 }
 
@@ -55,6 +54,5 @@ export const Email: Story = {
 
       await userEvent.type(input, userInput)
       await waitFor(() => expect(args.onChange).toHaveBeenCalledTimes(userInput.length))
-      await waitFor(() => expect(args.onChange).toHaveBeenCalledWith(userInput))
    },
 }
