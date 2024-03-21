@@ -23,7 +23,7 @@ exports[`Home renders correctly 1`] = `
         class="rounded-full inline-flex gap-2 px-5 py-2.5 cursor-pointer hover:text-gray-400 transition duration-300 ease-in-out active:scale-95 animate-in-up bg-transparent"
       >
         <p
-          class="text-xs text-white animate-in"
+          class="text-xs animate-in text-white"
         >
           Login
         </p>

@@ -20,7 +20,7 @@ exports[`Login renders correctly 1`] = `
         width="40"
       />
     </a>
-    <form
+    <div
       class="w-full max-w-2xl"
     >
       <div
@@ -34,18 +34,18 @@ exports[`Login renders correctly 1`] = `
             class="flex flex-col gap-2"
           >
             <h1
-              class="text-4xl font-extrabold text-gray-800 animate-in"
+              class="text-4xl font-extrabold animate-in text-gray-800"
             >
               Stay Tuned
             </h1>
             <div>
               <p
-                class="text-md text-gray-800 animate-in"
+                class="text-md animate-in text-gray-800"
               >
                 Be part of something big!
               </p>
               <p
-                class="text-md text-gray-800 animate-in"
+                class="text-md animate-in text-gray-800"
               >
                 Stay tuned to be the first to know about our upcoming launch!
               </p>
@@ -67,7 +67,7 @@ exports[`Login renders correctly 1`] = `
               value=""
             />
             <p
-              class="text-xs text-gray-800 animate-in"
+              class="text-xs animate-in text-gray-800"
             >
               You will receive an email containing a "Magic Link" that can be used to sign in without the need for a password.
             </p>
@@ -81,10 +81,9 @@ exports[`Login renders correctly 1`] = `
           >
             <button
               class="rounded-full inline-flex gap-2 px-5 py-2.5 cursor-pointer hover:text-gray-400 transition duration-300 ease-in-out active:scale-95 animate-in-up bg-yellow-400 hover:bg-yellow-300"
-              type="submit"
             >
               <p
-                class="text-xs text-gray-800 animate-in"
+                class="text-xs animate-in text-gray-800"
               >
                 Send Email
               </p>
@@ -92,7 +91,7 @@ exports[`Login renders correctly 1`] = `
           </div>
         </div>
       </div>
-    </form>
+    </div>
   </main>
 </DocumentFragment>
 `;
