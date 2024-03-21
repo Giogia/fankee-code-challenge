@@ -16,6 +16,8 @@ export const Input = ({
 
    return (
       <input
+         id={type}
+         name={type}
          type={type}
          className={classNames([
             'inline-flex w-full',

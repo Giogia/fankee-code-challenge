@@ -13,21 +13,20 @@ const { Primary, Neutral } = Hierarchy
 export const Button = ({
    label,
    icon,
-   hierarchy: type,
+   hierarchy,
    onClick,
    ...props
 }: ButtonProps) => {
 
    return (
       <button
-         type="button"
          className={classnames([
             'rounded-full inline-flex gap-2 px-5 py-2.5 cursor-pointer',
             'hover:text-gray-400',
             'active:scale-95',
             'transition duration-300 ease-in-out',
-            type === Primary && 'bg-yellow-400 hover:bg-yellow-300',
-            type === Neutral && 'bg-white hover:bg-gray-200'
+            hierarchy === Primary && 'bg-yellow-400 hover:bg-yellow-300',
+            hierarchy === Neutral && 'bg-white hover:bg-gray-200'
          ])}
          onClick={onClick}
          {...props}
