@@ -1,22 +1,28 @@
-import type { Metadata } from "next"
-import { Inter } from "next/font/google"
-import "./globals.css"
+import type { Metadata } from 'next'
 
-const inter = Inter({ subsets: ["latin"] })
+import { Roboto_Condensed } from 'next/font/google'
+import { ReactNode } from 'react'
+import './globals.css'
+
+const font = Roboto_Condensed({ 
+   subsets: ['latin'], 
+   preload: true,
+   fallback: ['roboto', 'inter']
+})
 
 export const metadata: Metadata = {
-  title: "Fankee Code Challenge",
-  description: "Magic Link Authentication and Augmented Profile demo web app",
+   title: 'Fankee Code Challenge',
+   description: 'Magic Link Authentication and Augmented Profile demo web app',
 }
 
 export default function RootLayout({
-  children,
+   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: ReactNode
 }>) {
-  return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
-  )
+   return (
+      <html lang="en">
+         <body className={font.className}>{children}</body>
+      </html>
+   )
 }

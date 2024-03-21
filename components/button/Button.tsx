@@ -1,42 +1,45 @@
 import classnames from 'classnames'
 
-import { ButtonProps } from './Button.props'
-import { Type } from './Button.types'
-import { Typography } from '../typography/Typography'
+import { Typography } from '../Typography'
 
-const { Primary, Neutral } = Type
+import { ButtonProps } from './Button.props'
+import { Hierarchy } from './Button.types'
+
+const { Primary, Neutral } = Hierarchy
 
 /**
  * UI component for user interaction
  */
 export const Button = ({
-  label,
-  icon,
-  type,
-  onClick
+   label,
+   icon,
+   hierarchy: type,
+   onClick,
+   ...props
 }: ButtonProps) => {
 
-  return (
-    <button
-      type="button"
-      className={classnames([
-        'rounded-full inline-flex gap-2 px-5 py-2.5 cursor-pointer',
-        'hover:text-gray-400',
-        'active:scale-95',
-        'transition duration-250 ease-in-out',
-        type === Primary && 'bg-yellow-400 hover:bg-yellow-300',
-        type === Neutral && 'bg-white'
-      ])}
-      onClick={onClick}
-    >
-      {icon}
-      {label && <Typography text={label} />}
-    </button>
-  )
+   return (
+      <button
+         type="button"
+         className={classnames([
+            'rounded-full inline-flex gap-2 px-5 py-2.5 cursor-pointer',
+            'hover:text-gray-400',
+            'active:scale-95',
+            'transition duration-300 ease-in-out',
+            type === Primary && 'bg-yellow-400 hover:bg-yellow-300',
+            type === Neutral && 'bg-white hover:bg-gray-200'
+         ])}
+         onClick={onClick}
+         {...props}
+      >
+         {icon}
+         {label && <Typography text={label} />}
+      </button>
+   )
 }
 
 Button.defaultProps = {
-  type: Type.Primary,
+   hierarchy: Hierarchy.Primary,
 }
 
-Button.Type = Type
+Button.Hierarchy = Hierarchy
