@@ -1,10 +1,10 @@
 import { render } from '@testing-library/react'
 
-import Login from './login/page'
+import Home from './page'
 
 describe('Home', () => {
    it('renders correctly', () => {
-      const { asFragment } = render(<Login />)
+      const { asFragment } = render(<Home />)
       expect(asFragment()).toMatchSnapshot()
    })
 })
