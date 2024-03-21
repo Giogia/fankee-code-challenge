@@ -1,10 +1,14 @@
 import type { Metadata } from 'next'
 
-import { Inter } from 'next/font/google'
+import { Roboto_Condensed } from 'next/font/google'
 import { ReactNode } from 'react'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const font = Roboto_Condensed({ 
+   subsets: ['latin'], 
+   preload: true,
+   fallback: ['roboto', 'inter']
+})
 
 export const metadata: Metadata = {
    title: 'Fankee Code Challenge',
@@ -18,7 +22,7 @@ export default function RootLayout({
 }>) {
    return (
       <html lang="en">
-         <body className={inter.className}>{children}</body>
+         <body className={font.className}>{children}</body>
       </html>
    )
 }
