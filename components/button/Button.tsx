@@ -1,6 +1,6 @@
 import classnames from 'classnames'
 
-import { Typography } from '../typography/Typography'
+import { Typography } from '../Typography'
 
 import { ButtonProps } from './Button.props'
 import { Type } from './Button.types'
