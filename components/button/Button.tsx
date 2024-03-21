@@ -5,7 +5,8 @@ import { Typography } from '../Typography'
 import { ButtonProps } from './Button.props'
 import { Hierarchy } from './Button.types'
 
-const { Primary, Neutral } = Hierarchy
+const { Gray, White } = Typography.Color
+const { Primary, Neutral, Ghost } = Hierarchy
 
 /**
  * UI component for user interaction
@@ -26,13 +27,14 @@ export const Button = ({
             'active:scale-95',
             'transition duration-300 ease-in-out',
             hierarchy === Primary && 'bg-yellow-400 hover:bg-yellow-300',
-            hierarchy === Neutral && 'bg-white hover:bg-gray-200'
+            hierarchy === Neutral && 'bg-white hover:bg-gray-200',
+            hierarchy === Ghost && 'bg-transparent',
          ])}
          onClick={onClick}
          {...props}
       >
          {icon}
-         {label && <Typography text={label} />}
+         {label && <Typography color={hierarchy === Ghost ? White : Gray} text={label} />}
       </button>
    )
 }

@@ -49,3 +49,18 @@ export const Neutral: Story = {
       await waitFor(() => expect(args.onClick).toHaveBeenCalledTimes(1))
    },
 }
+
+export const Ghost: Story = {
+   args: {
+      hierarchy: Hierarchy.Ghost,
+   },
+   play: async ({ canvasElement, args }) => {
+      const canvas = within(canvasElement)
+
+      const button = canvas.getByRole('button', {name: args.label})
+      expect(button).toBeVisible()
+
+      await userEvent.click(button)
+      await waitFor(() => expect(args.onClick).toHaveBeenCalledTimes(1))
+   },
+}
