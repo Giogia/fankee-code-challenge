@@ -16,14 +16,17 @@ export const Input = ({
 
    return (
       <input
+         id={type}
+         name={type}
          type={type}
          className={classNames([
             'inline-flex w-full',
             'border-2 border-gray-300',
             'focus:backdrop-blur-sm',
-            'text-sm text-gray-800',
+            'text-sm text-gray-400',
             'bg-transparent h-10 px-3 rounded-lg',
             'transition duration-250 ease-in-out',
+            'animate-in-up'
          ])}
          placeholder={placeholder}
          value={value}

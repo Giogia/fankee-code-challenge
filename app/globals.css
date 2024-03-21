@@ -25,10 +25,36 @@ body {
 @keyframes animateIn {
   from {
     opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-in-up {
+  animation: animateInUp 0.3s ease 0.15s both;
+}
+
+@keyframes animateInUp {
+  from {
+    opacity: 0;
     transform: translateY(10px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+  }
+}
+
+.animate-in-down {
+  animation: animateInDown 0.3s ease 0.15s both;
+}
+
+@keyframes animateInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
   }
 }

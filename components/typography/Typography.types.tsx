@@ -1,6 +1,7 @@
 export enum Color {
   White = 'white',
   Gray = 'gray-800',
+  Red = 'red-500',
 }
 
 export enum Hierarchy {

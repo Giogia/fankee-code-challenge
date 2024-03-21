@@ -28,7 +28,7 @@ export const Text: Story = {
       const canvas = within(canvasElement)
 
       const input = canvas.getByRole('textbox')
-      expect(input).toBeVisible()
+      await waitFor(() => expect(input).toBeVisible())
       expect(input).toHaveAttribute('placeholder', args.placeholder)
 
       const userInput = 'test'
@@ -47,7 +47,7 @@ export const Email: Story = {
       const canvas = within(canvasElement)
 
       const input = canvas.getByRole('textbox')
-      expect(input).toBeVisible()
+      await waitFor(() => expect(input).toBeVisible())
       expect(input).toHaveAttribute('placeholder', args.placeholder)
 
       const userInput = 'test@mail.com'

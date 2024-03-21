@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { expect, within } from '@storybook/test'
+import { expect, waitFor, within } from '@storybook/test'
 
 import { Typography } from '../Typography'
 
@@ -31,7 +31,7 @@ export const Base: Story = {
    play: async ({ canvasElement }) => {
       const canvas = within(canvasElement)
 
-      expect(canvas.getByTestId('card')).toBeVisible()
+      await waitFor(() => expect(canvas.getByTestId('card')).toBeVisible())
 
       expect(canvas.getByText('Header')).toBeVisible()
       expect(canvas.getByText('Body')).toBeVisible()

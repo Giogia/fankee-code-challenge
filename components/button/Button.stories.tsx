@@ -28,7 +28,7 @@ export const Primary: Story = {
       const canvas = within(canvasElement)
 
       const button = canvas.getByRole('button', {name: args.label})
-      expect(button).toBeVisible()
+      await waitFor(() => expect(button).toBeVisible())
 
       await userEvent.click(button)
       await waitFor(() => expect(args.onClick).toHaveBeenCalledTimes(1))
@@ -43,7 +43,22 @@ export const Neutral: Story = {
       const canvas = within(canvasElement)
 
       const button = canvas.getByRole('button', {name: args.label})
-      expect(button).toBeVisible()
+      await waitFor(() => expect(button).toBeVisible())
+
+      await userEvent.click(button)
+      await waitFor(() => expect(args.onClick).toHaveBeenCalledTimes(1))
+   },
+}
+
+export const Ghost: Story = {
+   args: {
+      hierarchy: Hierarchy.Ghost,
+   },
+   play: async ({ canvasElement, args }) => {
+      const canvas = within(canvasElement)
+
+      const button = canvas.getByRole('button', {name: args.label})
+      await waitFor(() => expect(button).toBeVisible())
 
       await userEvent.click(button)
       await waitFor(() => expect(args.onClick).toHaveBeenCalledTimes(1))
