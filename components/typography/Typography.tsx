@@ -9,9 +9,11 @@ const { H1, H2, H3, BodyS, BodyM, BodyL } = Hierarchy
  * UI component for displaying text
  */
 export const Typography = ({
+   className,
    text,
    color,
    hierarchy,
+   ...props
 }: TypographyProps) => {
 
    const typography: { [key: string]: React.ElementType }  = {
@@ -26,15 +28,19 @@ export const Typography = ({
    const Component = typography[hierarchy]
 
    return (
-      <Component className={classNames([
-         hierarchy === H1 && 'text-4xl font-extrabold',
-         hierarchy === H2 && 'text-3xl',
-         hierarchy === H3 && 'text-2xl',
-         hierarchy === BodyL && 'text-lg',
-         hierarchy === BodyM && 'text-md',
-         hierarchy === BodyS && 'text-xs',
-         `text-${color}`,
-      ])}>
+      <Component 
+         className={classNames([
+            hierarchy === H1 && 'text-4xl font-extrabold',
+            hierarchy === H2 && 'text-3xl',
+            hierarchy === H3 && 'text-2xl',
+            hierarchy === BodyL && 'text-lg',
+            hierarchy === BodyM && 'text-md',
+            hierarchy === BodyS && 'text-xs',
+            `text-${color}`,
+            className
+         ])}
+         {...props}
+      >
          {text}
       </Component>
    )

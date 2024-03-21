@@ -1,6 +1,8 @@
+import { ComponentProps } from 'react'
+
 import { Color, Hierarchy } from './Typography.types'
 
-export interface TypographyProps {
+export interface TypographyProps extends ComponentProps<'p'> {
   /**
    * The color of the text displayed.
    */
