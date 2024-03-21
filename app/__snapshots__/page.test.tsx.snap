@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home renders correctly 1`] = `
+<DocumentFragment>
+  <main
+    class="flex min-h-screen flex-col items-center justify-center gap-8 animate-in"
+  >
+    <img
+      alt="Fankee Logo"
+      data-nimg="1"
+      decoding="async"
+      fetchpriority="high"
+      height="40"
+      src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+      srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+      style="color: transparent;"
+      width="40"
+    />
+    <a
+      href="/login"
+    >
+      Login
+    </a>
+  </main>
+</DocumentFragment>
+`;
