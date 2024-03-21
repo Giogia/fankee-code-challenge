@@ -37,6 +37,7 @@ export const Typography = ({
             hierarchy === BodyM && 'text-md',
             hierarchy === BodyS && 'text-xs',
             `text-${color}`,
+            'animate-in',
             className
          ])}
          {...props}

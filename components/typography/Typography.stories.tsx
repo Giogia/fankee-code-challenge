@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { expect, within } from '@storybook/test'
+import { expect, waitFor, within } from '@storybook/test'
 
 import { Typography } from './Typography'
 
@@ -26,7 +26,7 @@ export const H1: Story = {
    },
    play: async ({ canvasElement, args }) => {
       const canvas = within(canvasElement)
-      expect(canvas.getByRole('heading', { name: args.text })).toBeVisible()
+      await waitFor(() => expect(canvas.getByRole('heading', { name: args.text })).toBeVisible())
    },
 }
 
@@ -36,7 +36,7 @@ export const H2: Story = {
    },
    play: async ({ canvasElement, args }) => {
       const canvas = within(canvasElement)
-      expect(canvas.getByRole('heading', { name: args.text })).toBeVisible()
+      await waitFor(() => expect(canvas.getByRole('heading', { name: args.text })).toBeVisible())
    },
 }
 
@@ -46,7 +46,7 @@ export const H3: Story = {
    },
    play: async ({ canvasElement, args }) => {
       const canvas = within(canvasElement)
-      expect(canvas.getByRole('heading', { name: args.text })).toBeVisible()
+      await waitFor(() => expect(canvas.getByRole('heading', { name: args.text })).toBeVisible())
    },
 }
 
@@ -56,7 +56,7 @@ export const BodyL: Story = {
    },
    play: async ({ canvasElement, args }) => {
       const canvas = within(canvasElement)
-      expect(canvas.getByText(args.text)).toBeVisible()
+      await waitFor(() => expect(canvas.getByText(args.text)).toBeVisible())
    },
 }
 
@@ -66,7 +66,7 @@ export const BodyM: Story = {
    },
    play: async ({ canvasElement, args }) => {
       const canvas = within(canvasElement)
-      expect(canvas.getByText(args.text)).toBeVisible()
+      await waitFor(() => expect(canvas.getByText(args.text)).toBeVisible())
    },
 }
 
@@ -76,6 +76,6 @@ export const BodyS: Story = {
    },
    play: async ({ canvasElement, args }) => {
       const canvas = within(canvasElement)
-      expect(canvas.getByText(args.text)).toBeVisible()
+      await waitFor(() => expect(canvas.getByText(args.text)).toBeVisible())
    },
 }

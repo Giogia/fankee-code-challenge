@@ -16,7 +16,7 @@ export const Card = ({
          className={classNames([
             'flex flex-col gap-8 p-6',
             'bg-gray-200 rounded-lg shadow-md',
-            'animate-in'
+            'animate-in-up'
          ])}
          data-testid='card'
       >

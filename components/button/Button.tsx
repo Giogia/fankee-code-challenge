@@ -24,8 +24,8 @@ export const Button = ({
          className={classnames([
             'rounded-full inline-flex gap-2 px-5 py-2.5 cursor-pointer',
             'hover:text-gray-400',
-            'active:scale-95',
             'transition duration-300 ease-in-out',
+            'active:scale-95 animate-in-up',
             hierarchy === Primary && 'bg-yellow-400 hover:bg-yellow-300',
             hierarchy === Neutral && 'bg-white hover:bg-gray-200',
             hierarchy === Ghost && 'bg-transparent',

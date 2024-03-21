@@ -19,7 +19,7 @@ export default function Login({
    searchParams?: Record<string, string>
 }) {
    return (
-      <main className="flex min-h-screen flex-col items-center gap-5 justify-center p-8 animate-in">
+      <main className="flex min-h-screen flex-col items-center gap-5 justify-center p-8 animate-in-up">
          <Link href="/">
             <Image priority src={Fankee} alt='Fankee Logo' />
          </Link>

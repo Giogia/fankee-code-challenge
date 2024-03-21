@@ -3,7 +3,7 @@
 exports[`Login renders correctly 1`] = `
 <DocumentFragment>
   <main
-    class="flex min-h-screen flex-col items-center gap-5 justify-center p-8 animate-in"
+    class="flex min-h-screen flex-col items-center gap-5 justify-center p-8 animate-in-up"
   >
     <a
       href="/"
@@ -24,7 +24,7 @@ exports[`Login renders correctly 1`] = `
       class="w-full max-w-2xl"
     >
       <div
-        class="flex flex-col gap-8 p-6 bg-gray-200 rounded-lg shadow-md animate-in"
+        class="flex flex-col gap-8 p-6 bg-gray-200 rounded-lg shadow-md animate-in-up"
         data-testid="card"
       >
         <div
@@ -34,18 +34,18 @@ exports[`Login renders correctly 1`] = `
             class="flex flex-col gap-2"
           >
             <h1
-              class="text-4xl font-extrabold text-gray-800"
+              class="text-4xl font-extrabold text-gray-800 animate-in"
             >
               Stay Tuned
             </h1>
             <div>
               <p
-                class="text-md text-gray-800"
+                class="text-md text-gray-800 animate-in"
               >
                 Be part of something big!
               </p>
               <p
-                class="text-md text-gray-800"
+                class="text-md text-gray-800 animate-in"
               >
                 Stay tuned to be the first to know about our upcoming launch!
               </p>
@@ -59,7 +59,7 @@ exports[`Login renders correctly 1`] = `
             class="flex flex-col gap-2"
           >
             <input
-              class="inline-flex w-full border-2 border-gray-300 focus:backdrop-blur-sm text-sm text-gray-800 bg-transparent h-10 px-3 rounded-lg transition duration-250 ease-in-out"
+              class="inline-flex w-full border-2 border-gray-300 focus:backdrop-blur-sm text-sm text-gray-400 bg-transparent h-10 px-3 rounded-lg transition duration-250 ease-in-out animate-in-up"
               id="email"
               name="email"
               placeholder="Insert your email"
@@ -67,7 +67,7 @@ exports[`Login renders correctly 1`] = `
               value=""
             />
             <p
-              class="text-xs text-gray-800"
+              class="text-xs text-gray-800 animate-in"
             >
               You will receive an email containing a "Magic Link" that can be used to sign in without the need for a password.
             </p>
@@ -80,11 +80,11 @@ exports[`Login renders correctly 1`] = `
             class="flex justify-end"
           >
             <button
-              class="rounded-full inline-flex gap-2 px-5 py-2.5 cursor-pointer hover:text-gray-400 active:scale-95 transition duration-300 ease-in-out bg-yellow-400 hover:bg-yellow-300"
+              class="rounded-full inline-flex gap-2 px-5 py-2.5 cursor-pointer hover:text-gray-400 transition duration-300 ease-in-out active:scale-95 animate-in-up bg-yellow-400 hover:bg-yellow-300"
               type="submit"
             >
               <p
-                class="text-xs text-gray-800"
+                class="text-xs text-gray-800 animate-in"
               >
                 Send Email
               </p>
