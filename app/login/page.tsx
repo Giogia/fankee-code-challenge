@@ -14,9 +14,9 @@ const { Gray, Red } = Typography.Color
 const { H1, BodyM, BodyS } = Typography.Hierarchy
 
 export default function Login({
-   searchParams: { message, error },
+   searchParams: { message, error } = {},
 }: {
-   searchParams: Record<string, string>
+   searchParams?: Record<string, string>
 }) {
    return (
       <main className="flex min-h-screen flex-col items-center gap-5 justify-center p-8 animate-in">
