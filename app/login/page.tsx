@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import Link from 'next/link'
 
 import { Button } from '@/components/Button'
@@ -15,7 +16,7 @@ const { H1, BodyM, BodyS } = Typography.Hierarchy
 export default function Login() {
    return (
       <main className="flex min-h-screen flex-col items-center gap-5 justify-center p-8 animate-in">
-         <Link href="/"><Fankee /></Link>
+         <Link href="/"><Image priority src={Fankee} alt='Fankee Logo' /></Link>
          <form>
             <Card 
                header={(

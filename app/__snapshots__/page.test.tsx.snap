@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home renders correctly 1`] = `
+<DocumentFragment>
+  <main
+    class="flex min-h-screen flex-col items-center gap-5 justify-center p-8 animate-in"
+  >
+    <a
+      href="/"
+    >
+      <img
+        alt="Fankee Logo"
+        data-nimg="1"
+        decoding="async"
+        fetchpriority="high"
+        height="40"
+        src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+        srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+        style="color: transparent;"
+        width="40"
+      />
+    </a>
+    <form>
+      <div
+        class="flex flex-col gap-6 p-6 bg-gray-200 rounded-lg shadow-md animate-in"
+        data-testid="card"
+      >
+        <div
+          class="header"
+        >
+          <div
+            class="flex flex-col gap-2"
+          >
+            <h1
+              class="text-4xl font-extrabold text-gray-800"
+            >
+              Stay Tuned
+            </h1>
+            <div>
+              <p
+                class="text-md text-gray-800"
+              >
+                Be part of something big!
+              </p>
+              <p
+                class="text-md text-gray-800"
+              >
+                Stay tuned to be the first to know about our upcoming launch!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="body"
+        >
+          <div
+            class="flex flex-col gap-2"
+          >
+            <input
+              class="inline-flex w-full border-2 border-gray-300 focus:backdrop-blur-sm text-sm text-gray-800 bg-transparent h-10 px-3 rounded-lg transition duration-250 ease-in-out"
+              placeholder="Insert your email"
+              type="email"
+              value=""
+            />
+            <p
+              class="text-xs text-gray-800"
+            >
+              You will receive an email containing an OTP link that can be used to sign in without the need for a password.
+            </p>
+          </div>
+        </div>
+        <div
+          class="actions"
+        >
+          <div
+            class="flex justify-end"
+          >
+            <button
+              class="rounded-full inline-flex gap-2 px-5 py-2.5 cursor-pointer hover:text-gray-400 active:scale-95 transition duration-300 ease-in-out bg-yellow-400 hover:bg-yellow-300"
+              type="button"
+            >
+              <p
+                class="text-xs text-gray-800"
+              >
+                Send Email
+              </p>
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </main>
+</DocumentFragment>
+`;
