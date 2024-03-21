@@ -3,9 +3,9 @@ import classnames from 'classnames'
 import { Typography } from '../Typography'
 
 import { ButtonProps } from './Button.props'
-import { Type } from './Button.types'
+import { Hierarchy } from './Button.types'
 
-const { Primary, Neutral } = Type
+const { Primary, Neutral } = Hierarchy
 
 /**
  * UI component for user interaction
@@ -13,8 +13,9 @@ const { Primary, Neutral } = Type
 export const Button = ({
    label,
    icon,
-   type,
-   onClick
+   hierarchy: type,
+   onClick,
+   ...props
 }: ButtonProps) => {
 
    return (
@@ -29,6 +30,7 @@ export const Button = ({
             type === Neutral && 'bg-white hover:bg-gray-200'
          ])}
          onClick={onClick}
+         {...props}
       >
          {icon}
          {label && <Typography text={label} />}
@@ -37,7 +39,7 @@ export const Button = ({
 }
 
 Button.defaultProps = {
-   type: Type.Primary,
+   hierarchy: Hierarchy.Primary,
 }
 
-Button.Type = Type
+Button.Hierarchy = Hierarchy

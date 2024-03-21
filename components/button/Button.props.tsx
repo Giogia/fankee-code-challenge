@@ -1,8 +1,14 @@
-import { ReactNode } from 'react'
+import { ComponentProps, ReactNode } from 'react'
 
-import { Type } from './Button.types'
+import { Hierarchy } from './Button.types'
 
-export interface ButtonProps {
+export interface ButtonProps extends ComponentProps<'button'> {
+  /**
+   * Indicates the button hierarchy:
+   * - Primary: the button is the primary call to action on the page.
+   * - Neutral: the button is a generic call to action on the page.
+   */
+  hierarchy: Hierarchy
   /**
    * The icon displayed on the button, if any.
    */
@@ -11,12 +17,6 @@ export interface ButtonProps {
    * The text or content displayed on the button.
    */
   label?: string
-  /**
-   * Indicates the button type:
-   * - Primary: the button is the primary call to action on the page.
-   * - Neutral: the button is a generic call to action on the page.
-   */
-  type: Type
   /**
    * An optional click handler that is called when the button is clicked.
    */

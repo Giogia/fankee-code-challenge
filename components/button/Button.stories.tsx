@@ -4,7 +4,7 @@ import { expect, fn, userEvent, within, waitFor } from '@storybook/test'
 
 import { Button } from './Button'
 
-const { Type } = Button
+const { Hierarchy } = Button
 
 const meta = {
    title: 'Button',
@@ -22,7 +22,7 @@ type Story = StoryObj<typeof meta>
 
 export const Primary: Story = {
    args: {
-      type: Type.Primary,
+      hierarchy: Hierarchy.Primary,
    },
    play: async ({ canvasElement, args }) => {
       const canvas = within(canvasElement)
@@ -37,7 +37,7 @@ export const Primary: Story = {
 
 export const Neutral: Story = {
    args: {
-      type: Type.Neutral,
+      hierarchy: Hierarchy.Neutral,
    },
    play: async ({ canvasElement, args }) => {
       const canvas = within(canvasElement)
