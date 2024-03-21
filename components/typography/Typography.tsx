@@ -11,21 +11,32 @@ const { H1, H2, H3, BodyS, BodyM, BodyL } = Hierarchy
 export const Typography = ({
    text,
    color,
-   hierarchy
+   hierarchy,
 }: TypographyProps) => {
 
+   const typography: { [key: string]: React.ElementType }  = {
+      [H1]: 'h1',
+      [H2]: 'h2',
+      [H3]: 'h3',
+      [BodyL]: 'p',
+      [BodyM]: 'p',
+      [BodyS]: 'p',
+   }
+
+   const Component = typography[hierarchy]
+
    return (
-      <h1 className={classNames([
-         hierarchy === H1 && 'text-4xl',
+      <Component className={classNames([
+         hierarchy === H1 && 'text-4xl font-extrabold',
          hierarchy === H2 && 'text-3xl',
          hierarchy === H3 && 'text-2xl',
          hierarchy === BodyL && 'text-lg',
          hierarchy === BodyM && 'text-md',
-         hierarchy === BodyS && 'text-sm',
+         hierarchy === BodyS && 'text-xs',
          `text-${color}`,
       ])}>
          {text}
-      </h1>
+      </Component>
    )
 }
 

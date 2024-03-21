@@ -19,6 +19,7 @@ export const Input = ({
          className={classNames([
             'inline-flex w-full',
             'border-2 border-gray-300',
+            'focus:backdrop-blur-sm',
             'text-sm text-gray-800',
             'bg-transparent h-10 px-3 rounded-lg',
             'transition duration-250 ease-in-out',

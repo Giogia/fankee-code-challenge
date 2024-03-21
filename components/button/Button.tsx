@@ -24,9 +24,9 @@ export const Button = ({
             'rounded-full inline-flex gap-2 px-5 py-2.5 cursor-pointer',
             'hover:text-gray-400',
             'active:scale-95',
-            'transition duration-250 ease-in-out',
+            'transition duration-300 ease-in-out',
             type === Primary && 'bg-yellow-400 hover:bg-yellow-300',
-            type === Neutral && 'bg-white'
+            type === Neutral && 'bg-white hover:bg-gray-200'
          ])}
          onClick={onClick}
       >

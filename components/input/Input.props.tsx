@@ -12,9 +12,9 @@ export interface InputProps {
   /**
    * The current value of the input field.
    */
-  value?: string | number
+  value?: string
   /**
    * Optional change handler that is called when the input value changes.
    */
-  onChange?: (value: string | number) => void
+  onChange?: (value: string) => void
 }

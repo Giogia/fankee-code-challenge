@@ -14,8 +14,9 @@ export const Card = ({
    return (
       <div
          className={classNames([
-            'flex flex-col gap-2 p-4',
-            'bg-white rounded-lg shadow-md',
+            'flex flex-col gap-6 p-6',
+            'bg-gray-200 rounded-lg shadow-md',
+            'animate-in'
          ])}
          data-testid='card'
       >
