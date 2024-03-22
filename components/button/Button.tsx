@@ -28,19 +28,19 @@ export const Button = ({
             'animate-in-up',
             hierarchy === Primary && 'bg-yellow-400 hover:bg-yellow-300',
             hierarchy === Neutral && 'bg-white hover:bg-gray-200',
-            hierarchy === Ghost && 'bg-transparent',
-            className
+            hierarchy === Ghost && 'bg-black bg-opacity-75',
+            className,
          ])}
          onClick={onClick}
          {...props}
       >
          {icon}
          {label && (
-            <Typography 
+            <Typography
                className={classnames([
                   'transition duration-300 ease-in-out',
                   hierarchy === Ghost && 'hover:text-gray-300',
-               ])} 
+               ])}
                color={hierarchy === Ghost ? White : Gray} text={label} />
          )}
       </button>

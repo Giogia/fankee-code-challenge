@@ -30,11 +30,11 @@ export default function Home() {
             <Typography className='text-center animate-in-up' color={White} hierarchy={BodyS} text={HEAD_1}/>
             <Typography className='text-center animate-in-up' color={White} hierarchy={BodyS} text={HEAD_2}/>
          </div>
-         <div className='flex flex-col gap-6 items-center'>
-            <Typography className='text-center halo-text animate-in-up' color={White} hierarchy={H1} text={TITLE}/>
+         <div className='flex flex-col gap-6 items-center halo-text '>
+            <Typography className='text-center animate-in-up' color={White} hierarchy={H1} text={TITLE}/>
             <Link className='flex justify-center w-full' href="/login">
                <Button 
-                  className='bg-black flex justify-center w-full max-w-96' 
+                  className='flex justify-center w-full max-w-96' 
                   color={White} 
                   hierarchy={Ghost} 
                   label={LOGIN}/>
