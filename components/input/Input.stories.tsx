@@ -11,7 +11,6 @@ const meta = {
    component: Input,
    argTypes: {},
    args: {
-      ...Input.defaultProps,
       onChange: fn()
    }
 } satisfies Meta<typeof Input>
