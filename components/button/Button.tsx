@@ -14,7 +14,7 @@ const { Primary, Neutral, Ghost } = Hierarchy
 export const Button = ({
    label,
    icon,
-   hierarchy,
+   hierarchy = Primary,
    onClick,
    ...props
 }: ButtonProps) => {
@@ -24,8 +24,8 @@ export const Button = ({
          className={classnames([
             'rounded-full inline-flex gap-2 px-5 py-2.5 cursor-pointer',
             'hover:text-gray-400',
-            'transition duration-300 ease-in-out',
-            'active:scale-95 animate-in-up',
+            'active:scale-95 transition duration-300 ease-in-out',
+            'animate-in-up',
             hierarchy === Primary && 'bg-yellow-400 hover:bg-yellow-300',
             hierarchy === Neutral && 'bg-white hover:bg-gray-200',
             hierarchy === Ghost && 'bg-transparent',
@@ -37,10 +37,6 @@ export const Button = ({
          {label && <Typography color={hierarchy === Ghost ? White : Gray} text={label} />}
       </button>
    )
-}
-
-Button.defaultProps = {
-   hierarchy: Hierarchy.Primary,
 }
 
 Button.Hierarchy = Hierarchy

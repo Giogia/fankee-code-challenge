@@ -10,7 +10,7 @@ export interface TypographyProps extends ComponentProps<'p'> {
   /**
    * The semantic hierarchy of the text.
    */
-  hierarchy: Hierarchy
+  hierarchy?: Hierarchy
   /**
    * The text to be displayed.
    */

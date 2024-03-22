@@ -11,7 +11,6 @@ const meta = {
    component: Typography,
    argTypes: {},
    args: {
-      ...Typography.defaultProps,
       color: Color.White,
       text: 'Text',
    }
@@ -77,5 +76,20 @@ export const BodyS: Story = {
    play: async ({ canvasElement, args }) => {
       const canvas = within(canvasElement)
       await waitFor(() => expect(canvas.getByText(args.text)).toBeVisible())
+   },
+}
+
+export const Error: Story = {
+   args: {
+      color: Color.Red,
+      hierarchy: Hierarchy.BodyS,
+   },
+   play: async ({ canvasElement, args }) => {
+      const canvas = within(canvasElement)
+      const text = canvas.getByText(args.text)
+      
+      await waitFor(() => expect(text).toBeVisible())
+
+      expect(text).toHaveStyle({color: 'rgb(239, 68, 68)'})
    },
 }

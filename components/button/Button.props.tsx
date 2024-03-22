@@ -8,7 +8,7 @@ export interface ButtonProps extends ComponentProps<'button'> {
    * - Primary: the button is the primary call to action on the page.
    * - Neutral: the button is a generic call to action on the page.
    */
-  hierarchy: Hierarchy
+  hierarchy?: Hierarchy
   /**
    * The icon displayed on the button, if any.
    */

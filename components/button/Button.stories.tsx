@@ -11,7 +11,6 @@ const meta = {
    component: Button,
    argTypes: {},
    args: {
-      ...Button.defaultProps,
       label: 'Button',
       onClick: fn()
    }

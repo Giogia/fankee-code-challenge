@@ -3,11 +3,13 @@ import classNames from 'classnames'
 import { InputProps } from './Input.props'
 import { Type } from './Input.types'
 
+const { Text } = Type
+
 /**
  * UI component for handling user input data
  */
 export const Input = ({
-   type,
+   type = Text,
    placeholder,
    value,
    onChange,
@@ -34,10 +36,6 @@ export const Input = ({
          {...props}
       />
    )
-}
-
-Input.defaultProps = {
-   type: Type.Text
 }
 
 Input.Type = Type

@@ -3,6 +3,7 @@ import classNames from 'classnames'
 import { TypographyProps } from './Typography.props'
 import { Color, Hierarchy } from './Typography.types'
 
+const { Gray, Red, White } = Color
 const { H1, H2, H3, BodyS, BodyM, BodyL } = Hierarchy
 
 /**
@@ -11,8 +12,8 @@ const { H1, H2, H3, BodyS, BodyM, BodyL } = Hierarchy
 export const Typography = ({
    className,
    text,
-   color,
-   hierarchy,
+   color = Gray,
+   hierarchy = BodyS,
    ...props
 }: TypographyProps) => {
 
@@ -30,13 +31,15 @@ export const Typography = ({
    return (
       <Component 
          className={classNames([
-            hierarchy === H1 && 'text-4xl font-extrabold',
-            hierarchy === H2 && 'text-3xl',
+            hierarchy === H1 && 'text-6xl font-extrabold',
+            hierarchy === H2 && 'text-4xl',
             hierarchy === H3 && 'text-2xl',
             hierarchy === BodyL && 'text-lg',
             hierarchy === BodyM && 'text-md',
             hierarchy === BodyS && 'text-xs',
-            `text-${color}`,
+            color===Gray && 'text-gray-800',
+            color===Red && 'text-red-500',
+            color===White && 'text-white',
             'animate-in',
             className
          ])}
@@ -45,11 +48,6 @@ export const Typography = ({
          {text}
       </Component>
    )
-}
-
-Typography.defaultProps = {
-   hierarchy: BodyS,
-   color: Color.Gray,
 }
 
 Typography.Color = Color
