@@ -3,10 +3,11 @@
 exports[`Home renders correctly 1`] = `
 <DocumentFragment>
   <main
-    class="flex min-h-screen flex-col items-center justify-center gap-6 animate-in"
+    class="min-h-screen flex flex-col items-center justify-center gap-12 p-6 pt-0 pb-32"
   >
     <img
       alt="Fankee Logo"
+      class="animate-in-up"
       data-nimg="1"
       decoding="async"
       fetchpriority="high"
@@ -16,19 +17,49 @@ exports[`Home renders correctly 1`] = `
       style="color: transparent;"
       width="40"
     />
-    <a
-      href="/login"
+    <p
+      class="text-md text-thin text-white animate-in text-center animate-in-up"
     >
-      <button
-        class="rounded-full inline-flex gap-2 px-5 py-2.5 cursor-pointer hover:text-gray-400 active:scale-95 transition duration-300 ease-in-out animate-in-up bg-transparent"
+      FANKEE IS THE FIRST COMMUNITY-DRIVEN MUSIC LABEL
+    </p>
+    <div
+      class="flex flex-col gap-1 items-center"
+    >
+      <p
+        class="text-xs text-thin text-white animate-in text-center animate-in-up"
       >
-        <p
-          class="text-xs text-white animate-in"
+        We promote the tracks that are most loved by fans.
+      </p>
+      <p
+        class="text-xs text-thin text-white animate-in text-center animate-in-up"
+      >
+        Are you ready to drop yours?
+      </p>
+    </div>
+    <div
+      class="flex flex-col gap-6 items-center"
+    >
+      <h1
+        class="text-6xl font-black text-white animate-in text-center halo-text animate-in-up"
+      >
+        Join the Competition
+      </h1>
+      <a
+        class="flex justify-center w-full"
+        href="/login"
+      >
+        <button
+          class="rounded-full inline-flex gap-2 px-5 py-2.5 cursor-pointer active:scale-95 transition duration-300 ease-in-out animate-in-up bg-transparent bg-black flex justify-center w-full max-w-96"
+          color="white"
         >
-          Login
-        </p>
-      </button>
-    </a>
+          <p
+            class="text-xs text-thin text-white animate-in transition duration-300 ease-in-out hover:text-gray-300"
+          >
+            Click here to login
+          </p>
+        </button>
+      </a>
+    </div>
   </main>
 </DocumentFragment>
 `;

@@ -31,12 +31,12 @@ export const Typography = ({
    return (
       <Component 
          className={classNames([
-            hierarchy === H1 && 'text-6xl font-extrabold',
+            hierarchy === H1 && 'text-6xl font-black',
             hierarchy === H2 && 'text-4xl',
             hierarchy === H3 && 'text-2xl',
-            hierarchy === BodyL && 'text-lg',
-            hierarchy === BodyM && 'text-md',
-            hierarchy === BodyS && 'text-xs',
+            hierarchy === BodyL && 'text-lg text-thin',
+            hierarchy === BodyM && 'text-md text-thin',
+            hierarchy === BodyS && 'text-xs text-thin',
             color===Gray && 'text-gray-800',
             color===Red && 'text-red-500',
             color===White && 'text-white',

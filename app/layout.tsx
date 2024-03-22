@@ -1,13 +1,14 @@
 import type { Metadata } from 'next'
 
-import { Roboto_Condensed } from 'next/font/google'
+import { Roboto } from 'next/font/google'
 import { ReactNode } from 'react'
 import './globals.css'
 
-const font = Roboto_Condensed({ 
-   subsets: ['latin'], 
+const font = Roboto({
+   subsets: ['latin'],
    preload: true,
-   fallback: ['roboto', 'inter']
+   fallback: ['inter'],
+   weight: '500'
 })
 
 export const metadata: Metadata = {

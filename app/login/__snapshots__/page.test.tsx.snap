@@ -31,18 +31,18 @@ exports[`Login renders correctly 1`] = `
           class="flex flex-col gap-2"
         >
           <h1
-            class="text-6xl font-extrabold text-gray-800 animate-in"
+            class="text-6xl font-black text-gray-800 animate-in"
           >
             Stay Tuned 🪩
           </h1>
           <div>
             <p
-              class="text-md text-gray-800 animate-in"
+              class="text-md text-thin text-gray-800 animate-in"
             >
               Be part of something big!
             </p>
             <p
-              class="text-md text-gray-800 animate-in"
+              class="text-md text-thin text-gray-800 animate-in"
             >
               Stay tuned to be the first to know about our upcoming launch!
             </p>
@@ -67,7 +67,7 @@ exports[`Login renders correctly 1`] = `
             class="h-20"
           >
             <p
-              class="text-xs text-gray-800 animate-in"
+              class="text-xs text-thin text-gray-800 animate-in"
             >
               You will receive an email containing a "Magic Link" that can be used to sign in without the need for a password.
             </p>
@@ -81,10 +81,10 @@ exports[`Login renders correctly 1`] = `
           class="flex justify-end"
         >
           <button
-            class="rounded-full inline-flex gap-2 px-5 py-2.5 cursor-pointer hover:text-gray-400 active:scale-95 transition duration-300 ease-in-out animate-in-up bg-yellow-400 hover:bg-yellow-300"
+            class="rounded-full inline-flex gap-2 px-5 py-2.5 cursor-pointer active:scale-95 transition duration-300 ease-in-out animate-in-up bg-yellow-400 hover:bg-yellow-300"
           >
             <p
-              class="text-xs text-gray-800 animate-in"
+              class="text-xs text-thin text-gray-800 animate-in transition duration-300 ease-in-out"
             >
               Send Email
             </p>

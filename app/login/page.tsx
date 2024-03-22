@@ -96,7 +96,7 @@ export default function Login({
                   <div className='h-20'>
                      <Typography hierarchy={BodyS} text={message || DESCRIPTION} />
                      {error &&
-                     <Typography className={'animate-in-down'} color={Red} hierarchy={BodyS} text={error} />
+                        <Typography className={'animate-in-down'} color={Red} hierarchy={BodyS} text={error} />
                      }
                   </div>
                </div>
