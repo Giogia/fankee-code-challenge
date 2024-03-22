@@ -18,6 +18,13 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.halo {
+  box-shadow: 
+  rgba(255, 235, 200, 0.1) 0px 1px 1px 0px inset, 
+  rgba(199, 70, 240, 0.1) 0px 60px 100px -20px, 
+  rgba(255, 195, 100, 0.5) 0px 10px 80px -30px;
+}
+
 .animate-in {
   animation: animateIn 0.3s ease 0.15s both;
 }

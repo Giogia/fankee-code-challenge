@@ -16,7 +16,7 @@ const { Email } = Input.Type
 const { Red } = Typography.Color
 const { H1, BodyM, BodyS } = Typography.Hierarchy
 
-const TITLE = 'Stay Tuned'
+const TITLE = 'Stay Tuned 🪩'
 const HEAD_1 = 'Be part of something big!'
 const HEAD_2 = 'Stay tuned to be the first to know about our upcoming launch!'
 const DESCRIPTION = 'You will receive an email containing a "Magic Link" that can be used to sign in without the need for a password.'
@@ -26,7 +26,7 @@ const INVALID_EMAIL_ERROR = 'Please enter a valid email address.'
 
 const SEND = 'Send Email'
 const SENDING = 'Sending...'
-const SENT = 'Sent'
+const SENT = 'Sent ✓'
 
 export default function Login({
    searchParams = {},
@@ -75,42 +75,42 @@ export default function Login({
          <Link href="/">
             <Image priority src={Fankee} alt='Fankee Logo' />
          </Link>
-         <div className='w-full max-w-2xl'>
-            <Card
-               header={(
-                  <div className='flex flex-col gap-2'>
-                     <Typography hierarchy={H1} text={TITLE} />
-                     <div>
-                        <Typography hierarchy={BodyM} text={HEAD_1} />
-                        <Typography hierarchy={BodyM} text={HEAD_2} />
-                     </div>
+         <Card
+            header={(
+               <div className='flex flex-col gap-2'>
+                  <Typography hierarchy={H1} text={TITLE} />
+                  <div>
+                     <Typography hierarchy={BodyM} text={HEAD_1} />
+                     <Typography hierarchy={BodyM} text={HEAD_2} />
                   </div>
-               )}
-               body={(
-                  <div className='flex flex-col gap-2'>
-                     <Input
-                        placeholder={INSERT_EMAIL}
-                        type={Email}
-                        value={email}
-                        onChange={onChangeEmail}
-                     />
+               </div>
+            )}
+            body={(
+               <div className='flex flex-col gap-2'>
+                  <Input
+                     placeholder={INSERT_EMAIL}
+                     type={Email}
+                     value={email}
+                     onChange={onChangeEmail}
+                  />
+                  <div className='h-20'>
                      <Typography hierarchy={BodyS} text={message || DESCRIPTION} />
                      {error &&
-                        <Typography className={'animate-in-down'} color={Red} hierarchy={BodyS} text={error} />
+                     <Typography className={'animate-in-down'} color={Red} hierarchy={BodyS} text={error} />
                      }
                   </div>
-               )}
-               actions={(
-                  <div className='flex justify-end'>
-                     <Button
-                        disabled={Boolean(message)}
-                        label={isLoading ? SENDING : (message ? SENT : SEND)}
-                        onClick={onSubmit}
-                     />
-                  </div>
-               )}
-            />
-         </div>
+               </div>
+            )}
+            actions={(
+               <div className='flex justify-end'>
+                  <Button
+                     disabled={Boolean(message)}
+                     label={isLoading ? SENDING : (message ? SENT : SEND)}
+                     onClick={onSubmit}
+                  />
+               </div>
+            )}
+         />
       </main>
    )
 }
