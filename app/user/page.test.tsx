@@ -8,7 +8,7 @@ jest.mock('react-dom', () => ({
 
 import User from './page'
 
-describe('Login', () => {
+describe('User', () => {
    it('renders correctly', () => {
       const { asFragment } = render(<User />)
       expect(asFragment()).toMatchSnapshot()

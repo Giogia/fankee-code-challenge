@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Login renders correctly 1`] = `
+exports[`User renders correctly 1`] = `
 <DocumentFragment>
   <main
     class="flex min-h-screen w-full flex-col items-center gap-12 justify-start p-6 animate-in"
