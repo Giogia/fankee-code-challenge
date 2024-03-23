@@ -6,6 +6,7 @@ import { CardProps } from './Card.props'
  * UI component for presenting data
  */
 export const Card = ({
+   className,
    header,
    body,
    actions
@@ -16,9 +17,10 @@ export const Card = ({
          className={classNames([
             'flex flex-col gap-10 p-9 pb-6',
             'bg-transparent border rounded-lg shadow-md',
-            'w-full min-w-min max-w-2xl',
+            'w-full min-w-min',
             'halo',
-            'animate-in-up'
+            'animate-in-up',
+            className
          ])}
          data-testid='card'
       >

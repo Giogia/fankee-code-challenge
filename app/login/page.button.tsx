@@ -3,16 +3,21 @@
 import { useFormStatus } from 'react-dom'
 
 import { Button } from '@/components/Button'
+import { ButtonProps } from '@/components/Button/Button.props'
 
 const SEND = 'Send Email'
 const SENDING = 'Sending...'
 const SENT = 'Sent ✓'
 
-export function SubmitButton({ ...props }) {
-   const { formAction, hasSent } = props
-   const { pending, action } = useFormStatus()
+interface SendButtonProps extends ButtonProps {
+   hasSent?: boolean
+}
 
-   const isLoading = pending && action === formAction
+export function SendButton({ hasSent, ...props }: SendButtonProps) {
+
+   const { pending, action } = useFormStatus()
+   
+   const isLoading = pending && action === props.formAction
 
    return (
       <div className='flex justify-end'>
