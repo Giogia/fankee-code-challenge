@@ -9,7 +9,7 @@ import { Card } from '@/components/Card'
 
 import Fankee from '../../public/fankee.svg'
 
-import { SubmitButton } from './page.button'
+import { SendButton } from './page.button'
 import { Header, Body } from './page.card'
 
 export default function Login() {
@@ -25,7 +25,7 @@ export default function Login() {
             <Card
                header={Header}
                body={<Body message={message} error={error} />}
-               actions={<SubmitButton formAction={formAction} hasSent={Boolean(message)} />}
+               actions={<SendButton formAction={formAction} hasSent={Boolean(message)} />}
             />
          </form>
       </main>

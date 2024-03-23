@@ -13,7 +13,7 @@ interface SendButtonProps extends ButtonProps {
    hasSent?: boolean
 }
 
-export function SubmitButton({ hasSent, ...props }: SendButtonProps) {
+export function SendButton({ hasSent, ...props }: SendButtonProps) {
 
    const { pending, action } = useFormStatus()
    
