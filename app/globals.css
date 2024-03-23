@@ -5,32 +5,32 @@
 :root {
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 0, 0, 0;
-  --background-end-rgb: 30, 30, 30;
+  --background-end-rgb: 22, 20, 25;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
+      transparent 0%,
+      rgb(var(--background-end-rgb)) 60%,
+      transparent 100%
     )
     rgb(var(--background-start-rgb));
 }
 
 .halo {
   box-shadow: 
-  rgba(255, 235, 200, 0.1) 0px 1px 1px 0px inset, 
-  rgba(55, 113, 155, 0.25) 0px 10px 40px 0px, 
-  rgba(199, 70, 240, 0.1) 0px 60px 100px -10px, 
-  rgba(255, 195, 100, 0.5) 0px 10px 80px -5px;
+  rgba(55, 113, 155, 0.1) 0px 10px 40px 0px, 
+  rgba(199, 70, 240, 0.05) 0px 20px 200px 0px, 
+  rgba(255, 195, 100, 0.1) 0px 30px 80px 0px;
 }
 
 .halo-text {
   text-shadow: 
-  0px 30px 40px rgba(55, 113, 155, 0.5), 
-  0px 60px 80px rgba(199, 70, 240, 0.5), 
-  0px 10px 60px rgba(255, 195, 100, 0.6);
+  0px 20px 80px rgba(255, 195, 100, 0.6),
+  0px 60px 40px rgba(55, 113, 155, 0.25), 
+  0px 120px 400px rgba(199, 70, 240, 0.35);
 }
 
 .animate-in {

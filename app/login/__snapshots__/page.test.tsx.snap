@@ -21,28 +21,28 @@ exports[`Login renders correctly 1`] = `
       />
     </a>
     <div
-      class="flex flex-col gap-10 p-9 pb-6 bg-gray-200 rounded-lg shadow-md w-full min-w-min max-w-2xl halo animate-in-up"
+      class="flex flex-col gap-10 p-9 pb-6 bg-transparent border rounded-lg shadow-md w-full min-w-min max-w-2xl halo animate-in-up"
       data-testid="card"
     >
       <div
         class="header"
       >
         <div
-          class="flex flex-col gap-2"
+          class="flex flex-col gap-2 min-w-64"
         >
           <h1
-            class="text-6xl font-black text-gray-800 animate-in"
+            class="text-6xl font-black text-white animate-in"
           >
             Stay Tuned 🪩
           </h1>
           <div>
             <p
-              class="text-md text-thin text-gray-800 animate-in"
+              class="text-md text-thin text-white animate-in"
             >
               Be part of something big!
             </p>
             <p
-              class="text-md text-thin text-gray-800 animate-in"
+              class="text-md text-thin text-white animate-in"
             >
               Stay tuned to be the first to know about our upcoming launch!
             </p>
@@ -67,7 +67,7 @@ exports[`Login renders correctly 1`] = `
             class="h-20"
           >
             <p
-              class="text-xs text-thin text-gray-800 animate-in"
+              class="text-xs text-thin text-white animate-in"
             >
               You will receive an email containing a "Magic Link" that can be used to sign in without the need for a password.
             </p>
