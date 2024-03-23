@@ -14,6 +14,7 @@ export const Typography = ({
    text,
    color = White,
    hierarchy = BodyS,
+   style,
    ...props
 }: TypographyProps) => {
 
@@ -31,7 +32,7 @@ export const Typography = ({
    return (
       <Component 
          className={classNames([
-            hierarchy === H1 && 'text-6xl font-black',
+            hierarchy === H1 && 'text-6xl',
             hierarchy === H2 && 'text-4xl',
             hierarchy === H3 && 'text-2xl',
             hierarchy === BodyL && 'text-lg text-thin',
@@ -43,6 +44,12 @@ export const Typography = ({
             'animate-in',
             className
          ])}
+         style={{
+            fontFamily: hierarchy === H1 ? 
+               'Arial Black, Arial Bold, Gadget, sans-serif':
+               'Arial',
+            ...style
+         }}
          {...props}
       >
          {text}
