@@ -6,7 +6,7 @@ import '../app/globals.css'
 const preview: Preview = {
   parameters: {
     backgrounds: {
-      default: 'dark',
+      default: undefined,
       grid: {
         disable: true
       },

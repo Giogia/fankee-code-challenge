@@ -3,7 +3,7 @@ import classNames from 'classnames'
 import { InputProps } from './Input.props'
 import { Type } from './Input.types'
 
-const { Text } = Type
+const { Text, Email, TextArea } = Type
 
 /**
  * UI component for handling user input data
@@ -16,8 +16,16 @@ export const Input = ({
    ...props
 }: InputProps) => {
 
+   const input: { [key: string]: React.ElementType }  = {
+      [Text]: 'input',
+      [Email]: 'input',
+      [TextArea]: 'textarea',
+   }
+
+   const Component = input[type]
+
    return (
-      <input
+      <Component
          id={type}
          name={type}
          type={type}
@@ -28,7 +36,8 @@ export const Input = ({
             'text-sm text-gray-400',
             'bg-transparent h-10 px-3 rounded-lg',
             'transition duration-250 ease-in-out',
-            'animate-in-up'
+            'animate-in-up',
+            type === TextArea && 'min-h-6 h-auto p-2',
          ])}
          placeholder={placeholder}
          value={value}

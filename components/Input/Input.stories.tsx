@@ -55,3 +55,22 @@ export const Email: Story = {
       await waitFor(() => expect(args.onChange).toHaveBeenCalledTimes(userInput.length))
    },
 }
+
+export const TextArea: Story = {
+   args: {
+      type: Type.TextArea,
+      placeholder: 'Insert a description'
+   },
+   play: async ({ canvasElement, args }) => {
+      const canvas = within(canvasElement)
+
+      const input = canvas.getByRole('textbox')
+      await waitFor(() => expect(input).toBeVisible())
+      expect(input).toHaveAttribute('placeholder', args.placeholder)
+
+      const userInput = 'This is a short description'
+
+      await userEvent.type(input, userInput)
+      await waitFor(() => expect(args.onChange).toHaveBeenCalledTimes(userInput.length))
+   },
+}
