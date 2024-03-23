@@ -1,0 +1,259 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login renders correctly 1`] = `
+<DocumentFragment>
+  <main
+    class="flex min-h-screen w-full flex-col items-center gap-12 justify-start p-6 animate-in"
+  >
+    <div
+      class="flex justify-between w-full"
+    >
+      <a
+        href="/"
+      >
+        <img
+          alt="Fankee Logo"
+          data-nimg="1"
+          decoding="async"
+          fetchpriority="high"
+          height="40"
+          src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+          style="color: transparent;"
+          width="40"
+        />
+      </a>
+    </div>
+    <div
+      class="flex flex-col justify-center w-full  max-w-4xl"
+    >
+      <h1
+        class="text-5xl text-white animate-in"
+        style="font-family: Arial Black, Arial Bold, Gadget, sans-serif;"
+      >
+        Your Profile
+      </h1>
+      <p
+        class="text-md text-thin text-white animate-in"
+        style="font-family: Arial;"
+      >
+        All you need to do is create a profile and upload your winning track. You'll be able to upload more after the first one from your profile page.
+      </p>
+    </div>
+    <form
+      class="flex flex-col h-full justify-center gap-8 w-full max-w-6xl"
+      novalidate=""
+    >
+      <div
+        class="flex flex-col gap-10 p-9 pb-6 bg-transparent border rounded-lg shadow-md w-full min-w-min halo animate-in-up animate-in-up"
+        data-testid="card"
+      >
+        <div
+          class="header"
+        >
+          <div
+            class="flex flex-col gap-2 min-w-64"
+          >
+            <h2
+              class="text-4xl text-white animate-in"
+              style="font-family: Arial;"
+            >
+              Personal Info
+            </h2>
+            <p
+              class="text-md text-thin text-white animate-in"
+              style="font-family: Arial;"
+            >
+              Add your personal information
+            </p>
+          </div>
+        </div>
+        <div
+          class="body"
+        >
+          <div
+            class="flex flex-col gap-6"
+          >
+            <div
+              class="flex gap-4"
+            >
+              <p
+                class="text-md text-thin text-white animate-in"
+                style="font-family: Arial;"
+              >
+                Name:
+              </p>
+              <input
+                class="inline-flex w-full border-2 border-gray-300 focus:backdrop-blur-sm text-sm text-gray-400 bg-transparent h-10 px-3 rounded-lg transition duration-250 ease-in-out animate-in-up"
+                id="name"
+                name="name"
+                placeholder="Insert your full name"
+                type="text"
+                value=""
+              />
+            </div>
+            <div
+              class="flex gap-4"
+            >
+              <p
+                class="text-md text-thin text-white animate-in"
+                style="font-family: Arial;"
+              >
+                Description:
+              </p>
+              <textarea
+                class="inline-flex w-full border-2 border-gray-300 focus:backdrop-blur-sm text-sm text-gray-400 bg-transparent h-10 px-3 rounded-lg transition duration-250 ease-in-out animate-in-up min-h-6 h-auto p-2"
+                id="description"
+                name="description"
+                placeholder="Insert a brief description"
+                type="textarea"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="actions"
+        >
+          <div
+            class="flex justify-end"
+          >
+            <button
+              class="rounded-full inline-flex gap-2 px-5 py-2.5 cursor-pointer active:scale-95 transition duration-300 ease-in-out animate-in-up bg-white hover:bg-gray-200"
+            >
+              <p
+                class="text-xs text-thin text-gray-800 animate-in transition duration-300 ease-in-out"
+                style="font-family: Arial;"
+              >
+                Save
+              </p>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex flex-col gap-10 p-9 pb-6 bg-transparent border rounded-lg shadow-md w-full min-w-min halo animate-in-up animate-in-up"
+        data-testid="card"
+      >
+        <div
+          class="header"
+        >
+          <div
+            class="flex flex-col gap-2 min-w-64"
+          >
+            <h2
+              class="text-4xl text-white animate-in"
+              style="font-family: Arial;"
+            >
+              Social
+            </h2>
+            <p
+              class="text-md text-thin text-white animate-in"
+              style="font-family: Arial;"
+            >
+              Add your social profiles
+            </p>
+          </div>
+        </div>
+        <div
+          class="body"
+        >
+          <div
+            class="grid-2 gap-6"
+          >
+            <div
+              class="flex gap-4"
+            >
+              <p
+                class="text-md text-thin text-white animate-in"
+                style="font-family: Arial;"
+              >
+                Instagram:
+              </p>
+              <input
+                class="inline-flex w-full border-2 border-gray-300 focus:backdrop-blur-sm text-sm text-gray-400 bg-transparent h-10 px-3 rounded-lg transition duration-250 ease-in-out animate-in-up"
+                id="instagram"
+                name="instagram"
+                placeholder="Insert your Instagram profile"
+                type="text"
+                value=""
+              />
+            </div>
+            <div
+              class="flex gap-4"
+            >
+              <p
+                class="text-md text-thin text-white animate-in"
+                style="font-family: Arial;"
+              >
+                X:
+              </p>
+              <input
+                class="inline-flex w-full border-2 border-gray-300 focus:backdrop-blur-sm text-sm text-gray-400 bg-transparent h-10 px-3 rounded-lg transition duration-250 ease-in-out animate-in-up"
+                id="x"
+                name="x"
+                placeholder="Insert your X profile"
+                type="text"
+                value=""
+              />
+            </div>
+            <div
+              class="flex gap-4"
+            >
+              <p
+                class="text-md text-thin text-white animate-in"
+                style="font-family: Arial;"
+              >
+                Facebook:
+              </p>
+              <input
+                class="inline-flex w-full border-2 border-gray-300 focus:backdrop-blur-sm text-sm text-gray-400 bg-transparent h-10 px-3 rounded-lg transition duration-250 ease-in-out animate-in-up"
+                id="facebook"
+                name="facebook"
+                placeholder="Insert your Facebook profile"
+                type="text"
+                value=""
+              />
+            </div>
+            <div
+              class="flex gap-4"
+            >
+              <p
+                class="text-md text-thin text-white animate-in"
+                style="font-family: Arial;"
+              >
+                TikTok:
+              </p>
+              <input
+                class="inline-flex w-full border-2 border-gray-300 focus:backdrop-blur-sm text-sm text-gray-400 bg-transparent h-10 px-3 rounded-lg transition duration-250 ease-in-out animate-in-up"
+                id="tiktok"
+                name="tiktok"
+                placeholder="Insert your TikTok profile"
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="actions"
+        >
+          <div
+            class="flex justify-end"
+          >
+            <button
+              class="rounded-full inline-flex gap-2 px-5 py-2.5 cursor-pointer active:scale-95 transition duration-300 ease-in-out animate-in-up bg-white hover:bg-gray-200"
+            >
+              <p
+                class="text-xs text-thin text-gray-800 animate-in transition duration-300 ease-in-out"
+                style="font-family: Arial;"
+              >
+                Save
+              </p>
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </main>
+</DocumentFragment>
+`;

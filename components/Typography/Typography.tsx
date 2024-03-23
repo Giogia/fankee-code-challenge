@@ -32,7 +32,7 @@ export const Typography = ({
    return (
       <Component 
          className={classNames([
-            hierarchy === H1 && 'text-6xl',
+            hierarchy === H1 && 'text-5xl',
             hierarchy === H2 && 'text-4xl',
             hierarchy === H3 && 'text-2xl',
             hierarchy === BodyL && 'text-lg text-thin',
