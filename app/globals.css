@@ -19,6 +19,17 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 800px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
 .halo {
   box-shadow: 
   rgba(55, 113, 155, 0.1) 0px 10px 40px 0px, 

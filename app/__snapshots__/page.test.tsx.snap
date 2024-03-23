@@ -19,6 +19,7 @@ exports[`Home renders correctly 1`] = `
     />
     <p
       class="text-md text-thin text-white animate-in text-center animate-in-up"
+      style="font-family: Arial;"
     >
       FANKEE IS THE FIRST COMMUNITY-DRIVEN MUSIC LABEL
     </p>
@@ -27,11 +28,13 @@ exports[`Home renders correctly 1`] = `
     >
       <p
         class="text-xs text-thin text-white animate-in text-center animate-in-up"
+        style="font-family: Arial;"
       >
         We promote the tracks that are most loved by fans.
       </p>
       <p
         class="text-xs text-thin text-white animate-in text-center animate-in-up"
+        style="font-family: Arial;"
       >
         Are you ready to drop yours?
       </p>
@@ -40,7 +43,8 @@ exports[`Home renders correctly 1`] = `
       class="flex flex-col gap-6 items-center halo-text "
     >
       <h1
-        class="text-6xl font-black text-white animate-in text-center animate-in-up"
+        class="text-5xl text-white animate-in text-center animate-in-up"
+        style="font-family: Arial Black, Arial Bold, Gadget, sans-serif;"
       >
         Join the Competition
       </h1>
@@ -54,6 +58,7 @@ exports[`Home renders correctly 1`] = `
         >
           <p
             class="text-xs text-thin text-white animate-in transition duration-300 ease-in-out hover:text-gray-300"
+            style="font-family: Arial;"
           >
             Click here to login
           </p>
