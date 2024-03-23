@@ -1,15 +1,7 @@
 import type { Metadata } from 'next'
 
-import { Roboto } from 'next/font/google'
 import { ReactNode } from 'react'
 import './globals.css'
-
-const font = Roboto({
-   subsets: ['latin'],
-   preload: true,
-   fallback: ['inter'],
-   weight: '500'
-})
 
 export const metadata: Metadata = {
    title: 'Fankee Code Challenge',
@@ -23,7 +15,7 @@ export default function RootLayout({
 }>) {
    return (
       <html lang="en">
-         <body className={font.className}>{children}</body>
+         <body>{children}</body>
       </html>
    )
 }

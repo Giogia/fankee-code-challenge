@@ -77,7 +77,7 @@ export default function Login({
          </Link>
          <Card
             header={(
-               <div className='flex flex-col gap-2'>
+               <div className='flex flex-col gap-2 min-w-64'>
                   <Typography hierarchy={H1} text={TITLE} />
                   <div>
                      <Typography hierarchy={BodyM} text={HEAD_1} />

@@ -12,7 +12,7 @@ const { H1, H2, H3, BodyS, BodyM, BodyL } = Hierarchy
 export const Typography = ({
    className,
    text,
-   color = Gray,
+   color = White,
    hierarchy = BodyS,
    ...props
 }: TypographyProps) => {
