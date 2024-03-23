@@ -22,7 +22,7 @@ export const Header = (
    </div>
 )
 
-export const Body = (params: { message: string, error?: string }) => (
+export const Body = () => (
    <div className='flex flex-col gap-6'>
       <div className='flex gap-4'>
          <Typography hierarchy={BodyM} text={NAME} />

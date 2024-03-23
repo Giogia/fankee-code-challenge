@@ -28,7 +28,7 @@ export const Header = (
    </div>
 )
 
-export const Body = (params: { message: string, error?: string }) => (
+export const Body = () => (
    <div className='grid-2 gap-6'>
       <div className='flex gap-4'>
          <Typography hierarchy={BodyM} text={INSTAGRAM} />

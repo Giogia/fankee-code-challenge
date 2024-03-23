@@ -17,13 +17,13 @@ export default function User() {
             <Card
                className='animate-in-up'
                header={PersonalCardHeader}
-               body={<PersonalCardBody message='' />}
+               body={<PersonalCardBody />}
                actions={<SaveButton formAction={undefined} hasSaved={false} />}
             />
             <Card
                className='animate-in-up'
                header={SocialCardHeader}
-               body={<SocialCardBody message='' />}
+               body={<SocialCardBody />}
                actions={<SaveButton formAction={undefined} hasSaved={false} />}
             />
          </form>
