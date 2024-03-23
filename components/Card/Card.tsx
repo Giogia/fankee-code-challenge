@@ -17,7 +17,7 @@ export const Card = ({
          className={classNames([
             'flex flex-col gap-10 p-9 pb-6',
             'bg-transparent border rounded-lg shadow-md',
-            'w-full min-w-min max-w-2xl',
+            'w-full min-w-min',
             'halo',
             'animate-in-up',
             className

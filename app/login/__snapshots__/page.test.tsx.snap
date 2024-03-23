@@ -21,10 +21,11 @@ exports[`Login renders correctly 1`] = `
       />
     </a>
     <form
+      class="flex w-full justify-center max-w-4xl"
       novalidate=""
     >
       <div
-        class="flex flex-col gap-10 p-9 pb-6 bg-transparent border rounded-lg shadow-md w-full min-w-min max-w-2xl halo animate-in-up"
+        class="flex flex-col gap-10 p-9 pb-6 bg-transparent border rounded-lg shadow-md w-full min-w-min halo animate-in-up"
         data-testid="card"
       >
         <div
