@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useFormState } from 'react-dom'
 
-import { signIn } from '@/actions'
+import { signIn } from '@/actions/auth'
 import { Card } from '@/components/Card'
 
 import Fankee from '../../public/fankee.svg'

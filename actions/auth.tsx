@@ -22,10 +22,7 @@ export async function signIn(prevState: unknown, formData: FormData) {
 
    const { error } = await supabase.auth.signInWithOtp(({
       email,
-      options: {
-         shouldCreateUser: true,
-         emailRedirectTo: 'https://localhost:3000',
-      },
+      options: { shouldCreateUser: true },
    }))
       
    if (error) {
