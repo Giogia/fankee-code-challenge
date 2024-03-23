@@ -1,6 +1,6 @@
-import { ReactNode } from 'react'
+import { ComponentProps, ReactNode } from 'react'
 
-export interface CardProps {
+export interface CardProps extends ComponentProps<'div'> {
   /**
    * The header content of the card component.
    */
