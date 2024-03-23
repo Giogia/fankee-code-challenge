@@ -1,19 +1,19 @@
 import * as nextNavigation from 'next/navigation'
 
 import { signIn, signOut } from './auth'
-import { EMAIL_ERROR, EMAIL_SUCCESS } from './auth.strings'
+import { EMAIL_ERROR, EMAIL_SUCCESS, EMAIL_VALIDATION_ERROR } from './auth.strings'
 
-const FIXED_TIME_STAMP = new Date('1995-12-12T13:05:00Z').getTime()
 const TEST_ERROR = 'Test Error'
+const TEST_EMAIL = 'user@mail.com'
 
 jest.mock('next/navigation')
 jest.mock('../utils/supabase/server', () => ({
    createClient: jest.fn().mockReturnValue({
       auth: {
          signInWithOtp: jest.fn()
-            .mockReturnValueOnce({ error: 'Test Error' })
+            .mockReturnValueOnce({ error: { message: 'Test Error' } })
             .mockReturnValueOnce({ data: {} }),
-         signOut: jest.fn().mockReturnValue({ error: 'Test Error' }),
+         signOut: jest.fn().mockReturnValue({ error: { message: 'Test Error' } }),
       }
    })
 }))
@@ -22,19 +22,39 @@ const mockRedirect = jest.spyOn(nextNavigation, 'redirect')
 
 describe('Auth Module', () => {
 
-   beforeAll(() => jest.spyOn(Date, 'now').mockImplementation(() => FIXED_TIME_STAMP))
-   afterAll(() => jest.spyOn(Date, 'now').mockRestore())
+   it('returns error on invalid email address', async () => {
 
-   it('redirects to error page on signIn failure', async () => {
+      const formData = new FormData()
+      formData.set('email', 'not-valid-email')
 
-      await signIn('test@example.com')
-      expect(mockRedirect).toHaveBeenCalledWith(`/login?reqId=${FIXED_TIME_STAMP}&error=${EMAIL_ERROR}: ${TEST_ERROR}`)
+      const res = await signIn({}, formData)
+      expect(res).toEqual({
+         message: '',
+         error: EMAIL_VALIDATION_ERROR
+      })
+   })
+
+   it('returns error on signIn failure', async () => {
+
+      const formData = new FormData()
+      formData.set('email', TEST_EMAIL)
+
+      const res = await signIn({}, formData)
+      expect(res).toEqual({
+         message: '',
+         error: `${EMAIL_ERROR}: ${TEST_ERROR}`
+      })
    })
 
    it('show email sent message on signIn success', async () => {
 
-      await signIn('test@example.com')
-      expect(mockRedirect).toHaveBeenCalledWith(`/login?reqId=${FIXED_TIME_STAMP}&message=${EMAIL_SUCCESS}`)
+      const formData = new FormData()
+      formData.set('email', TEST_EMAIL)
+
+      const res = await signIn({}, formData)
+      expect(res).toEqual({
+         message: EMAIL_SUCCESS
+      })
    })
 
    it('redirects to login page on signOut', async () => {
