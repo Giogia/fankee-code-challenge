@@ -30,7 +30,7 @@ Explore Fankee Demo graphical components using [Storybook][storybook].
 
 <div align="center">
   <p>Deployed on Vercel △</p>
-  <a href=[vercel]/> Open Live Demo </a>
+  <a href="https://fankee-code-challenge.vercel.app"/> Open Live Demo </a>
 </div>
 
 </div>
