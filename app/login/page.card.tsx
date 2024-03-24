@@ -7,7 +7,8 @@ const { Email } = Input.Type
 const { Red } = Typography.Color
 const { H1, BodyM, BodyS } = Typography.Hierarchy
 
-const TITLE = 'Stay Tuned 🪩'
+const TITLE_1 = 'Stay'
+const TITLE_2 = 'Tuned 🪩'
 const HEAD_1 = 'Be part of something big!'
 const HEAD_2 = 'Stay tuned to be the first to know about our upcoming launch!'
 const DESCRIPTION = 'You will receive an email containing a "Magic Link" that can be used to sign in without the need for a password.'
@@ -15,8 +16,11 @@ const DESCRIPTION = 'You will receive an email containing a "Magic Link" that ca
 const INSERT_EMAIL = 'Insert your email'
 
 export const Header = (
-   <div className='flex flex-col gap-2 min-w-64'>
-      <Typography hierarchy={H1} text={TITLE} />
+   <div className='flex flex-col gap-2'>
+      <div className='flex gap-2 flex-wrap'>
+         <Typography hierarchy={H1} text={TITLE_1} />
+         <Typography className='min-w-64' hierarchy={H1} text={TITLE_2} />
+      </div>
       <div>
          <Typography hierarchy={BodyM} text={HEAD_1} />
          <Typography hierarchy={BodyM} text={HEAD_2} />

@@ -3,7 +3,7 @@
 exports[`Login renders correctly 1`] = `
 <DocumentFragment>
   <main
-    class="flex min-h-screen w-full flex-col items-center gap-16 justify-center p-4 pt-12 animate-in-up"
+    class="flex min-h-screen w-full flex-col items-center justify-center gap-16 p-4 pt-16 animate-in-up"
   >
     <a
       href="/"
@@ -21,7 +21,7 @@ exports[`Login renders correctly 1`] = `
       />
     </a>
     <form
-      class="flex w-full justify-center max-w-4xl pb-36"
+      class="flex w-full justify-center max-w-4xl pb-28"
       novalidate=""
     >
       <div
@@ -32,14 +32,24 @@ exports[`Login renders correctly 1`] = `
           class="header"
         >
           <div
-            class="flex flex-col gap-2 min-w-64"
+            class="flex flex-col gap-2"
           >
-            <h1
-              class="text-5xl text-white overflow-ellipsis animate-in"
-              style="font-family: Arial Black, Arial Bold, Gadget, sans-serif;"
+            <div
+              class="flex gap-2 flex-wrap"
             >
-              Stay Tuned 🪩
-            </h1>
+              <h1
+                class="text-5xl text-white overflow-ellipsis animate-in"
+                style="font-family: Arial Black, Arial Bold, Gadget, sans-serif;"
+              >
+                Stay
+              </h1>
+              <h1
+                class="text-5xl text-white overflow-ellipsis animate-in min-w-64"
+                style="font-family: Arial Black, Arial Bold, Gadget, sans-serif;"
+              >
+                Tuned 🪩
+              </h1>
+            </div>
             <div>
               <p
                 class="text-md text-thin text-white overflow-ellipsis animate-in"

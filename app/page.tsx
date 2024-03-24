@@ -16,7 +16,7 @@ const TITLE = 'Join the Competition'
 export default function Home() {
 
    return (
-      <main className="min-h-screen h-full flex flex-col items-center justify-center gap-16 p-4 pt-1 pb-36">
+      <main className="min-h-screen h-full flex flex-col items-center justify-center gap-16 p-4 pt-16 pb-36">
          <Image
             className='animate-in-up'
             priority
