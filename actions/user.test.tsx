@@ -1,4 +1,3 @@
-
 import { getUser } from './user'
 
 const TEST_ERROR = 'Test Error'
