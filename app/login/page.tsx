@@ -17,7 +17,7 @@ export default function Login() {
    const [{ message, error }, formAction] = useFormState(signIn, { message: '' })
 
    return (
-      <main className='flex min-h-screen w-full flex-col items-center gap-16 justify-center p-8 animate-in-up'>
+      <main className='flex min-h-screen w-full flex-col items-center gap-16 justify-center p-4 pt-12 animate-in-up'>
          <Link href='/'>
             <Image priority src={Fankee} alt='Fankee Logo' />
          </Link>
