@@ -28,13 +28,13 @@ exports[`User renders correctly 1`] = `
       class="flex flex-col justify-center w-full  max-w-4xl"
     >
       <h1
-        class="text-5xl text-white animate-in"
+        class="text-5xl text-white overflow-ellipsis animate-in"
         style="font-family: Arial Black, Arial Bold, Gadget, sans-serif;"
       >
         Your Profile
       </h1>
       <p
-        class="text-md text-thin text-white animate-in"
+        class="text-md text-thin text-white overflow-ellipsis animate-in"
         style="font-family: Arial;"
       >
         All you need to do is create a profile and upload your winning track. You'll be able to upload more after the first one from your profile page.
@@ -55,13 +55,13 @@ exports[`User renders correctly 1`] = `
             class="flex flex-col gap-2 min-w-64"
           >
             <h2
-              class="text-4xl text-white animate-in"
+              class="text-4xl text-white overflow-ellipsis animate-in"
               style="font-family: Arial;"
             >
               Personal Info
             </h2>
             <p
-              class="text-md text-thin text-white animate-in"
+              class="text-md text-thin text-white overflow-ellipsis animate-in"
               style="font-family: Arial;"
             >
               Add your personal information
@@ -78,7 +78,7 @@ exports[`User renders correctly 1`] = `
               class="flex gap-4"
             >
               <p
-                class="text-md text-thin text-white animate-in"
+                class="text-md text-thin text-white overflow-ellipsis animate-in"
                 style="font-family: Arial;"
               >
                 Name:
@@ -96,7 +96,7 @@ exports[`User renders correctly 1`] = `
               class="flex gap-4"
             >
               <p
-                class="text-md text-thin text-white animate-in"
+                class="text-md text-thin text-white overflow-ellipsis animate-in"
                 style="font-family: Arial;"
               >
                 Description:
@@ -118,10 +118,10 @@ exports[`User renders correctly 1`] = `
             class="flex justify-end"
           >
             <button
-              class="rounded-full inline-flex gap-2 px-5 py-2.5 cursor-pointer active:scale-95 transition duration-300 ease-in-out animate-in-up bg-white hover:bg-gray-200"
+              class="rounded-full inline-flex gap-2 px-5 py-2.5 cursor-pointer active:scale-95 transition duration-300 ease-in-out animate-in-up overflow-hidden bg-white hover:bg-gray-200"
             >
               <p
-                class="text-xs text-thin text-gray-800 animate-in transition duration-300 ease-in-out"
+                class="text-xs text-thin text-gray-800 overflow-ellipsis animate-in w-full overflow-auto transition duration-300 ease-in-out"
                 style="font-family: Arial;"
               >
                 Save
@@ -141,13 +141,13 @@ exports[`User renders correctly 1`] = `
             class="flex flex-col gap-2 min-w-64"
           >
             <h2
-              class="text-4xl text-white animate-in"
+              class="text-4xl text-white overflow-ellipsis animate-in"
               style="font-family: Arial;"
             >
               Social
             </h2>
             <p
-              class="text-md text-thin text-white animate-in"
+              class="text-md text-thin text-white overflow-ellipsis animate-in"
               style="font-family: Arial;"
             >
               Add your social profiles
@@ -164,7 +164,7 @@ exports[`User renders correctly 1`] = `
               class="flex gap-4"
             >
               <p
-                class="text-md text-thin text-white animate-in"
+                class="text-md text-thin text-white overflow-ellipsis animate-in"
                 style="font-family: Arial;"
               >
                 Instagram:
@@ -182,7 +182,7 @@ exports[`User renders correctly 1`] = `
               class="flex gap-4"
             >
               <p
-                class="text-md text-thin text-white animate-in"
+                class="text-md text-thin text-white overflow-ellipsis animate-in"
                 style="font-family: Arial;"
               >
                 X:
@@ -200,7 +200,7 @@ exports[`User renders correctly 1`] = `
               class="flex gap-4"
             >
               <p
-                class="text-md text-thin text-white animate-in"
+                class="text-md text-thin text-white overflow-ellipsis animate-in"
                 style="font-family: Arial;"
               >
                 Facebook:
@@ -218,7 +218,7 @@ exports[`User renders correctly 1`] = `
               class="flex gap-4"
             >
               <p
-                class="text-md text-thin text-white animate-in"
+                class="text-md text-thin text-white overflow-ellipsis animate-in"
                 style="font-family: Arial;"
               >
                 TikTok:
@@ -241,10 +241,10 @@ exports[`User renders correctly 1`] = `
             class="flex justify-end"
           >
             <button
-              class="rounded-full inline-flex gap-2 px-5 py-2.5 cursor-pointer active:scale-95 transition duration-300 ease-in-out animate-in-up bg-white hover:bg-gray-200"
+              class="rounded-full inline-flex gap-2 px-5 py-2.5 cursor-pointer active:scale-95 transition duration-300 ease-in-out animate-in-up overflow-hidden bg-white hover:bg-gray-200"
             >
               <p
-                class="text-xs text-thin text-gray-800 animate-in transition duration-300 ease-in-out"
+                class="text-xs text-thin text-gray-800 overflow-ellipsis animate-in w-full overflow-auto transition duration-300 ease-in-out"
                 style="font-family: Arial;"
               >
                 Save

@@ -1,23 +1,24 @@
 import { redirect } from 'next/navigation'
+import { use } from 'react'
 
 import { Card } from '@/components/Card'
 import { createClient } from '@/utils/supabase/server'
 
 import { SaveButton } from './page.button'
-import {Header as PersonalCardHeader, Body as PersonalCardBody} from './page.card-personal'
-import {Header as SocialCardHeader, Body as SocialCardBody} from './page.card-social'
-import {Header as PageHeader, Title as PageTitle} from './page.header'
+import { Header as PersonalCardHeader, Body as PersonalCardBody } from './page.card-personal'
+import { Header as SocialCardHeader, Body as SocialCardBody } from './page.card-social'
+import { Header as PageHeader, Title as PageTitle } from './page.header'
 
-export default async function User() {
+export default function User() {
 
    const supabase = createClient()
 
-   const { data, error } = await supabase.auth.getUser()
-   
+   const { data, error } = use(supabase.auth.getUser())
+
    if (error || !data?.user) {
       redirect('/')
    }
-    
+
    return (
       <main className='flex min-h-screen w-full flex-col items-center gap-12 justify-start p-6 animate-in'>
          {PageHeader}

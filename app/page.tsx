@@ -4,7 +4,7 @@ import { Typography } from '@/components/Typography'
 
 import Fankee from '../public/fankee.svg'
 
-import AuthButton from './page.button'
+import { AuthButton } from './page.button'
 
 const { H1, BodyM, BodyS } = Typography.Hierarchy
 
@@ -13,7 +13,7 @@ const HEAD_1 = 'We promote the tracks that are most loved by fans.'
 const HEAD_2 = 'Are you ready to drop yours?'
 const TITLE = 'Join the Competition'
 
-export default async function Home() {
+export default function Home() {
 
    return (
       <main className="min-h-screen h-full flex flex-col items-center justify-center gap-16 p-4 pt-1 pb-36">
