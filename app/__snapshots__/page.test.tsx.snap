@@ -3,7 +3,7 @@
 exports[`Home renders correctly 1`] = `
 <DocumentFragment>
   <main
-    class="min-h-screen h-full flex flex-col items-center justify-center gap-12 p-6 pt-0 pb-32"
+    class="min-h-screen h-full flex flex-col items-center justify-center gap-16 p-6 pt-0 pb-36"
   >
     <img
       alt="Fankee Logo"
@@ -40,7 +40,7 @@ exports[`Home renders correctly 1`] = `
       </p>
     </div>
     <div
-      class="flex flex-col gap-6 items-center halo-text "
+      class="flex flex-col gap-6 items-center halo-text pb-28"
     >
       <h1
         class="text-5xl text-white animate-in text-center animate-in-up"
@@ -53,7 +53,7 @@ exports[`Home renders correctly 1`] = `
         href="/login"
       >
         <button
-          class="rounded-full inline-flex gap-2 px-5 py-2.5 cursor-pointer active:scale-95 transition duration-300 ease-in-out animate-in-up bg-black bg-opacity-75 flex justify-center w-full max-w-96"
+          class="rounded-full inline-flex gap-2 px-5 py-2.5 cursor-pointer active:scale-95 transition duration-300 ease-in-out animate-in-up bg-black bg-opacity-75 flex justify-center w-full max-w-72"
           color="white"
         >
           <p

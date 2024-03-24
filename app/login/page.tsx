@@ -17,11 +17,11 @@ export default function Login() {
    const [{ message, error }, formAction] = useFormState(signIn, { message: '' })
 
    return (
-      <main className='flex min-h-screen w-full flex-col items-center gap-5 justify-center p-8 animate-in-up'>
+      <main className='flex min-h-screen w-full flex-col items-center gap-16 justify-center p-8 animate-in-up'>
          <Link href='/'>
             <Image priority src={Fankee} alt='Fankee Logo' />
          </Link>
-         <form className='flex w-full justify-center max-w-4xl' noValidate={true}>
+         <form className='flex w-full justify-center max-w-4xl pb-36' noValidate={true}>
             <Card
                header={Header}
                body={<Body message={message} error={error} />}

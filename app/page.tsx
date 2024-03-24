@@ -18,7 +18,7 @@ const LOGIN = 'Click here to login'
 
 export default function Home() {    
    return (
-      <main className="min-h-screen h-full flex flex-col items-center justify-center gap-12 p-6 pt-0 pb-32">
+      <main className="min-h-screen h-full flex flex-col items-center justify-center gap-16 p-6 pt-0 pb-36">
          <Image 
             className='animate-in-up' 
             priority 
@@ -30,11 +30,11 @@ export default function Home() {
             <Typography className='text-center animate-in-up' hierarchy={BodyS} text={HEAD_1}/>
             <Typography className='text-center animate-in-up' hierarchy={BodyS} text={HEAD_2}/>
          </div>
-         <div className='flex flex-col gap-6 items-center halo-text '>
+         <div className='flex flex-col gap-6 items-center halo-text pb-28'>
             <Typography className='text-center animate-in-up' hierarchy={H1} text={TITLE}/>
             <Link className='flex justify-center w-full' href="/login">
                <Button 
-                  className='flex justify-center w-full max-w-96' 
+                  className='flex justify-center w-full max-w-72' 
                   color={White} 
                   hierarchy={Ghost} 
                   label={LOGIN}/>

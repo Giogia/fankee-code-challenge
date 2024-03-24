@@ -3,7 +3,7 @@
 exports[`Login renders correctly 1`] = `
 <DocumentFragment>
   <main
-    class="flex min-h-screen w-full flex-col items-center gap-5 justify-center p-8 animate-in-up"
+    class="flex min-h-screen w-full flex-col items-center gap-16 justify-center p-8 animate-in-up"
   >
     <a
       href="/"
@@ -21,7 +21,7 @@ exports[`Login renders correctly 1`] = `
       />
     </a>
     <form
-      class="flex w-full justify-center max-w-4xl"
+      class="flex w-full justify-center max-w-4xl pb-36"
       novalidate=""
     >
       <div

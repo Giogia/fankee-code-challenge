@@ -13,7 +13,7 @@ body {
   background: linear-gradient(
       to bottom,
       transparent 0%,
-      rgb(var(--background-end-rgb)) 60%,
+      rgb(var(--background-end-rgb)) 50%,
       transparent 100%
     )
     rgb(var(--background-start-rgb));
@@ -39,8 +39,8 @@ body {
 
 .halo-text {
   text-shadow: 
-  0px 20px 80px rgba(255, 195, 100, 0.6),
-  0px 60px 40px rgba(55, 113, 155, 0.25), 
+  0px 20px 200px rgba(255, 195, 100, 0.6),
+  0px 60px 100px rgba(55, 113, 155, 0.25), 
   0px 120px 400px rgba(199, 70, 240, 0.35);
 }
 
