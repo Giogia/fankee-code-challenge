@@ -41,6 +41,7 @@ export const Typography = ({
             color===Gray && 'text-gray-800',
             color===Red && 'text-red-500',
             color===White && 'text-white',
+            'overflow-ellipsis',
             'animate-in',
             className
          ])}

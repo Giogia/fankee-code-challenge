@@ -3,7 +3,7 @@
 exports[`Login renders correctly 1`] = `
 <DocumentFragment>
   <main
-    class="flex min-h-screen w-full flex-col items-center gap-16 justify-center p-8 animate-in-up"
+    class="flex min-h-screen w-full flex-col items-center gap-16 justify-center p-4 pt-12 animate-in-up"
   >
     <a
       href="/"
@@ -35,20 +35,20 @@ exports[`Login renders correctly 1`] = `
             class="flex flex-col gap-2 min-w-64"
           >
             <h1
-              class="text-5xl text-white animate-in"
+              class="text-5xl text-white overflow-ellipsis animate-in"
               style="font-family: Arial Black, Arial Bold, Gadget, sans-serif;"
             >
               Stay Tuned 🪩
             </h1>
             <div>
               <p
-                class="text-md text-thin text-white animate-in"
+                class="text-md text-thin text-white overflow-ellipsis animate-in"
                 style="font-family: Arial;"
               >
                 Be part of something big!
               </p>
               <p
-                class="text-md text-thin text-white animate-in"
+                class="text-md text-thin text-white overflow-ellipsis animate-in"
                 style="font-family: Arial;"
               >
                 Stay tuned to be the first to know about our upcoming launch!
@@ -74,7 +74,7 @@ exports[`Login renders correctly 1`] = `
               class="h-20"
             >
               <p
-                class="text-xs text-thin text-white animate-in"
+                class="text-xs text-thin text-white overflow-ellipsis animate-in"
                 style="font-family: Arial;"
               >
                 You will receive an email containing a "Magic Link" that can be used to sign in without the need for a password.
@@ -89,10 +89,10 @@ exports[`Login renders correctly 1`] = `
             class="flex justify-end"
           >
             <button
-              class="rounded-full inline-flex gap-2 px-5 py-2.5 cursor-pointer active:scale-95 transition duration-300 ease-in-out animate-in-up bg-yellow-400 hover:bg-yellow-300"
+              class="rounded-full inline-flex gap-2 px-5 py-2.5 cursor-pointer active:scale-95 transition duration-300 ease-in-out animate-in-up overflow-hidden bg-yellow-400 hover:bg-yellow-300"
             >
               <p
-                class="text-xs text-thin text-gray-800 animate-in transition duration-300 ease-in-out"
+                class="text-xs text-thin text-gray-800 overflow-ellipsis animate-in w-full overflow-auto transition duration-300 ease-in-out"
                 style="font-family: Arial;"
               >
                 Send Email
