@@ -15,8 +15,8 @@ export const Card = ({
    return (
       <div
          className={classNames([
-            'flex flex-col gap-10 p-9 pb-6',
-            'bg-transparent border rounded-lg shadow-md',
+            'flex flex-col gap-10 p-10 pb-8',
+            'bg-transparent border-2 border-gray-400/25 rounded-lg shadow-md',
             'w-full min-w-min',
             'halo',
             'animate-in-up',

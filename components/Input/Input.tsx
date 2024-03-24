@@ -31,7 +31,7 @@ export const Input = ({
          type={type}
          className={classNames([
             'inline-flex w-full',
-            'border-2 border-gray-300',
+            'border-2 border-gray-400/40',
             'focus:backdrop-blur-sm',
             'text-sm text-gray-400',
             'bg-transparent h-10 px-3 rounded-lg',
