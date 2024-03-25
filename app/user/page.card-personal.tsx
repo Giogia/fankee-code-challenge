@@ -24,8 +24,8 @@ export const Header = (
 
 export const Body = () => (
    <div className='flex flex-col gap-6'>
-      <div className='flex gap-4'>
-         <Typography hierarchy={BodyM} text={NAME} />
+      <div className='flex flex-col gap-4'>
+         <Typography className='pl-2' hierarchy={BodyM} text={NAME} />
          <Input
             id='name'
             name='name'
@@ -33,8 +33,8 @@ export const Body = () => (
             type={Text}
          />
       </div>
-      <div className='flex gap-4'>
-         <Typography hierarchy={BodyM} text={DESCRIPTION} />
+      <div className='flex flex-col gap-4'>
+         <Typography className='pl-2' hierarchy={BodyM} text={DESCRIPTION} />
          <Input
             id='description'
             name='description'

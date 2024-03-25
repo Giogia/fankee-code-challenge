@@ -3,7 +3,7 @@
 exports[`Login renders correctly 1`] = `
 <DocumentFragment>
   <main
-    class="flex min-h-screen w-full flex-col items-center justify-center gap-16 p-4 pt-16 animate-in-up"
+    class="flex min-h-screen w-full flex-col items-center justify-center gap-16 pt-16 animate-in-up p-6"
   >
     <a
       href="/"
@@ -50,7 +50,9 @@ exports[`Login renders correctly 1`] = `
                 Tuned 🪩
               </h1>
             </div>
-            <div>
+            <div
+              class="pl-1"
+            >
               <p
                 class="text-md text-thin text-white overflow-ellipsis animate-in"
                 style="font-family: Arial;"
@@ -81,7 +83,125 @@ exports[`Login renders correctly 1`] = `
               value=""
             />
             <div
-              class="h-20"
+              class="h-20 pl-1"
+            >
+              <p
+                class="text-xs text-thin text-white overflow-ellipsis animate-in"
+                style="font-family: Arial;"
+              >
+                You will receive an email containing a "Magic Link" that can be used to sign in without the need for a password.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="actions"
+        >
+          <div
+            class="flex justify-end"
+          >
+            <button
+              class="rounded-full inline-flex gap-2 px-5 py-2.5 cursor-pointer active:scale-95 transition duration-300 ease-in-out animate-in-up overflow-hidden bg-yellow-400 hover:bg-yellow-300"
+            >
+              <p
+                class="text-xs text-thin text-gray-800 overflow-ellipsis animate-in w-full overflow-auto transition duration-300 ease-in-out"
+                style="font-family: Arial;"
+              >
+                Send Email
+              </p>
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </main>
+</DocumentFragment>
+`;
+
+exports[`Login renders correctly on mobile 1`] = `
+<DocumentFragment>
+  <main
+    class="flex min-h-screen w-full flex-col items-center justify-center gap-16 pt-16 animate-in-up"
+  >
+    <a
+      href="/"
+    >
+      <img
+        alt="Fankee Logo"
+        data-nimg="1"
+        decoding="async"
+        fetchpriority="high"
+        height="40"
+        src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+        srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+        style="color: transparent;"
+        width="40"
+      />
+    </a>
+    <form
+      class="flex w-full justify-center max-w-4xl pb-28"
+      novalidate=""
+    >
+      <div
+        class="flex flex-col gap-10 p-10 pb-8 bg-transparent rounded-lg w-full min-w-min animate-in-up"
+        data-testid="card"
+      >
+        <div
+          class="header"
+        >
+          <div
+            class="flex flex-col gap-2"
+          >
+            <div
+              class="flex gap-2 flex-wrap"
+            >
+              <h1
+                class="text-5xl text-white overflow-ellipsis animate-in"
+                style="font-family: Arial Black, Arial Bold, Gadget, sans-serif;"
+              >
+                Stay
+              </h1>
+              <h1
+                class="text-5xl text-white overflow-ellipsis animate-in min-w-64"
+                style="font-family: Arial Black, Arial Bold, Gadget, sans-serif;"
+              >
+                Tuned 🪩
+              </h1>
+            </div>
+            <div
+              class="pl-1"
+            >
+              <p
+                class="text-md text-thin text-white overflow-ellipsis animate-in"
+                style="font-family: Arial;"
+              >
+                Be part of something big!
+              </p>
+              <p
+                class="text-md text-thin text-white overflow-ellipsis animate-in"
+                style="font-family: Arial;"
+              >
+                Stay tuned to be the first to know about our upcoming launch!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="body"
+        >
+          <div
+            class="flex flex-col gap-2"
+          >
+            <input
+              class="inline-flex w-full bg-gray-400/10 border-0 focus:backdrop-blur-sm text-sm text-gray-400 h-10 px-3 rounded-lg transition duration-250 ease-in-out animate-in-up"
+              id="email"
+              name="email"
+              placeholder="Insert your email"
+              type="email"
+              value=""
+            />
+            <div
+              class="h-20 pl-1"
             >
               <p
                 class="text-xs text-thin text-white overflow-ellipsis animate-in"

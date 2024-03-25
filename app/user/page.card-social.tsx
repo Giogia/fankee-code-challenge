@@ -30,8 +30,8 @@ export const Header = (
 
 export const Body = () => (
    <div className='grid-2 gap-6'>
-      <div className='flex gap-4'>
-         <Typography hierarchy={BodyM} text={INSTAGRAM} />
+      <div className='flex flex-col gap-4'>
+         <Typography className='pl-2' hierarchy={BodyM} text={INSTAGRAM} />
          <Input
             id='instagram'
             name='instagram'
@@ -39,8 +39,8 @@ export const Body = () => (
             type={Text}
          />
       </div>
-      <div className='flex gap-4'>
-         <Typography hierarchy={BodyM} text={X} />
+      <div className='flex flex-col gap-4'>
+         <Typography className='pl-2' hierarchy={BodyM} text={X} />
          <Input
             id='x'
             name='x'
@@ -48,8 +48,8 @@ export const Body = () => (
             type={Text}
          />
       </div>
-      <div className='flex gap-4'>
-         <Typography hierarchy={BodyM} text={FACEBOOK} />
+      <div className='flex flex-col gap-4'>
+         <Typography className='pl-2' hierarchy={BodyM} text={FACEBOOK} />
          <Input
             id='facebook'
             name='facebook'
@@ -57,8 +57,8 @@ export const Body = () => (
             type={Text}
          />
       </div>
-      <div className='flex gap-4'>
-         <Typography hierarchy={BodyM} text={TIKTOK} />
+      <div className='flex flex-col gap-4'>
+         <Typography className='pl-2' hierarchy={BodyM} text={TIKTOK} />
          <Input
             id='tiktok'
             name='tiktok'

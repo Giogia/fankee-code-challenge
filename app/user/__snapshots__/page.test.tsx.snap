@@ -75,10 +75,10 @@ exports[`User renders correctly 1`] = `
             class="flex flex-col gap-6"
           >
             <div
-              class="flex gap-4"
+              class="flex flex-col gap-4"
             >
               <p
-                class="text-md text-thin text-white overflow-ellipsis animate-in"
+                class="text-md text-thin text-white overflow-ellipsis animate-in pl-2"
                 style="font-family: Arial;"
               >
                 Name:
@@ -93,10 +93,10 @@ exports[`User renders correctly 1`] = `
               />
             </div>
             <div
-              class="flex gap-4"
+              class="flex flex-col gap-4"
             >
               <p
-                class="text-md text-thin text-white overflow-ellipsis animate-in"
+                class="text-md text-thin text-white overflow-ellipsis animate-in pl-2"
                 style="font-family: Arial;"
               >
                 Description:
@@ -161,10 +161,10 @@ exports[`User renders correctly 1`] = `
             class="grid-2 gap-6"
           >
             <div
-              class="flex gap-4"
+              class="flex flex-col gap-4"
             >
               <p
-                class="text-md text-thin text-white overflow-ellipsis animate-in"
+                class="text-md text-thin text-white overflow-ellipsis animate-in pl-2"
                 style="font-family: Arial;"
               >
                 Instagram:
@@ -179,10 +179,10 @@ exports[`User renders correctly 1`] = `
               />
             </div>
             <div
-              class="flex gap-4"
+              class="flex flex-col gap-4"
             >
               <p
-                class="text-md text-thin text-white overflow-ellipsis animate-in"
+                class="text-md text-thin text-white overflow-ellipsis animate-in pl-2"
                 style="font-family: Arial;"
               >
                 X:
@@ -197,10 +197,10 @@ exports[`User renders correctly 1`] = `
               />
             </div>
             <div
-              class="flex gap-4"
+              class="flex flex-col gap-4"
             >
               <p
-                class="text-md text-thin text-white overflow-ellipsis animate-in"
+                class="text-md text-thin text-white overflow-ellipsis animate-in pl-2"
                 style="font-family: Arial;"
               >
                 Facebook:
@@ -215,10 +215,10 @@ exports[`User renders correctly 1`] = `
               />
             </div>
             <div
-              class="flex gap-4"
+              class="flex flex-col gap-4"
             >
               <p
-                class="text-md text-thin text-white overflow-ellipsis animate-in"
+                class="text-md text-thin text-white overflow-ellipsis animate-in pl-2"
                 style="font-family: Arial;"
               >
                 TikTok:

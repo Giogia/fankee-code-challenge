@@ -21,7 +21,7 @@ export const Header = (
          <Typography hierarchy={H1} text={TITLE_1} />
          <Typography className='min-w-64' hierarchy={H1} text={TITLE_2} />
       </div>
-      <div>
+      <div className='pl-1'>
          <Typography hierarchy={BodyM} text={HEAD_1} />
          <Typography hierarchy={BodyM} text={HEAD_2} />
       </div>
@@ -34,7 +34,7 @@ export const Body = ({ message, error }: { message: string, error?: string }) =>
          placeholder={INSERT_EMAIL}
          type={Email}
       />
-      <div className='h-20'>
+      <div className='h-20 pl-1'>
          <Typography hierarchy={BodyS} text={message || DESCRIPTION} />
          {error &&
             <Typography className={'animate-in-down'} color={Red} hierarchy={BodyS} text={error} />
