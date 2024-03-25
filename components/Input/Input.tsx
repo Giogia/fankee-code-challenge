@@ -1,14 +1,17 @@
 import classNames from 'classnames'
 
 import { InputProps } from './Input.props'
+import { Hierarchy } from './Input.types'
 import { Type } from './Input.types'
 
+const { Neutral, Ghost } = Hierarchy
 const { Text, Email, TextArea } = Type
 
 /**
  * UI component for handling user input data
  */
 export const Input = ({
+   hierarchy = Neutral,
    type = Text,
    placeholder,
    value,
@@ -31,10 +34,11 @@ export const Input = ({
          type={type}
          className={classNames([
             'inline-flex w-full',
-            'border-2 border-gray-400/40',
+            hierarchy === Neutral && 'bg-gray-400/10 border-0',
+            hierarchy === Ghost && 'bg-transparent border-2 border-gray-400/40',
             'focus:backdrop-blur-sm',
             'text-sm text-gray-400',
-            'bg-transparent h-10 px-3 rounded-lg',
+            'h-10 px-3 rounded-lg',
             'transition duration-250 ease-in-out',
             'animate-in-up',
             type === TextArea && 'min-h-6 h-auto p-2',

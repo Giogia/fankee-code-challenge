@@ -1,8 +1,14 @@
 import { ChangeEvent, ComponentProps } from 'react'
 
-import { Type } from './Input.types'
+import { Hierarchy, Type } from './Input.types'
 
 export interface InputProps extends ComponentProps<'input'> {
+  /**
+   * Indicates the button hierarchy:
+   * - Neutral: the input is a generic data collector on the page.
+   * - Ghost: the input is a subtle data collector on the page.
+   */
+  hierarchy?: Hierarchy
   /**
    * Placeholder text for the input field.
    */

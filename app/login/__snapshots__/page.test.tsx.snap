@@ -73,7 +73,7 @@ exports[`Login renders correctly 1`] = `
             class="flex flex-col gap-2"
           >
             <input
-              class="inline-flex w-full border-2 border-gray-400/40 focus:backdrop-blur-sm text-sm text-gray-400 bg-transparent h-10 px-3 rounded-lg transition duration-250 ease-in-out animate-in-up"
+              class="inline-flex w-full bg-gray-400/10 border-0 focus:backdrop-blur-sm text-sm text-gray-400 h-10 px-3 rounded-lg transition duration-250 ease-in-out animate-in-up"
               id="email"
               name="email"
               placeholder="Insert your email"

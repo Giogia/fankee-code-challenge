@@ -84,7 +84,7 @@ exports[`User renders correctly 1`] = `
                 Name:
               </p>
               <input
-                class="inline-flex w-full border-2 border-gray-400/40 focus:backdrop-blur-sm text-sm text-gray-400 bg-transparent h-10 px-3 rounded-lg transition duration-250 ease-in-out animate-in-up"
+                class="inline-flex w-full bg-gray-400/10 border-0 focus:backdrop-blur-sm text-sm text-gray-400 h-10 px-3 rounded-lg transition duration-250 ease-in-out animate-in-up"
                 id="name"
                 name="name"
                 placeholder="Insert your full name"
@@ -102,7 +102,7 @@ exports[`User renders correctly 1`] = `
                 Description:
               </p>
               <textarea
-                class="inline-flex w-full border-2 border-gray-400/40 focus:backdrop-blur-sm text-sm text-gray-400 bg-transparent h-10 px-3 rounded-lg transition duration-250 ease-in-out animate-in-up min-h-6 h-auto p-2"
+                class="inline-flex w-full bg-gray-400/10 border-0 focus:backdrop-blur-sm text-sm text-gray-400 h-10 px-3 rounded-lg transition duration-250 ease-in-out animate-in-up min-h-6 h-auto p-2"
                 id="description"
                 name="description"
                 placeholder="Insert a brief description"
@@ -170,7 +170,7 @@ exports[`User renders correctly 1`] = `
                 Instagram:
               </p>
               <input
-                class="inline-flex w-full border-2 border-gray-400/40 focus:backdrop-blur-sm text-sm text-gray-400 bg-transparent h-10 px-3 rounded-lg transition duration-250 ease-in-out animate-in-up"
+                class="inline-flex w-full bg-gray-400/10 border-0 focus:backdrop-blur-sm text-sm text-gray-400 h-10 px-3 rounded-lg transition duration-250 ease-in-out animate-in-up"
                 id="instagram"
                 name="instagram"
                 placeholder="Insert your Instagram profile"
@@ -188,7 +188,7 @@ exports[`User renders correctly 1`] = `
                 X:
               </p>
               <input
-                class="inline-flex w-full border-2 border-gray-400/40 focus:backdrop-blur-sm text-sm text-gray-400 bg-transparent h-10 px-3 rounded-lg transition duration-250 ease-in-out animate-in-up"
+                class="inline-flex w-full bg-gray-400/10 border-0 focus:backdrop-blur-sm text-sm text-gray-400 h-10 px-3 rounded-lg transition duration-250 ease-in-out animate-in-up"
                 id="x"
                 name="x"
                 placeholder="Insert your X profile"
@@ -206,7 +206,7 @@ exports[`User renders correctly 1`] = `
                 Facebook:
               </p>
               <input
-                class="inline-flex w-full border-2 border-gray-400/40 focus:backdrop-blur-sm text-sm text-gray-400 bg-transparent h-10 px-3 rounded-lg transition duration-250 ease-in-out animate-in-up"
+                class="inline-flex w-full bg-gray-400/10 border-0 focus:backdrop-blur-sm text-sm text-gray-400 h-10 px-3 rounded-lg transition duration-250 ease-in-out animate-in-up"
                 id="facebook"
                 name="facebook"
                 placeholder="Insert your Facebook profile"
@@ -224,7 +224,7 @@ exports[`User renders correctly 1`] = `
                 TikTok:
               </p>
               <input
-                class="inline-flex w-full border-2 border-gray-400/40 focus:backdrop-blur-sm text-sm text-gray-400 bg-transparent h-10 px-3 rounded-lg transition duration-250 ease-in-out animate-in-up"
+                class="inline-flex w-full bg-gray-400/10 border-0 focus:backdrop-blur-sm text-sm text-gray-400 h-10 px-3 rounded-lg transition duration-250 ease-in-out animate-in-up"
                 id="tiktok"
                 name="tiktok"
                 placeholder="Insert your TikTok profile"

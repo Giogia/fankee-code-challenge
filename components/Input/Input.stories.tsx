@@ -3,6 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { expect, fn, userEvent, within, waitFor } from '@storybook/test'
 
 import { Input } from './Input'
+import { Hierarchy } from './Input.types'
 
 const { Type } = Input
 
@@ -69,6 +70,26 @@ export const TextArea: Story = {
       expect(input).toHaveAttribute('placeholder', args.placeholder)
 
       const userInput = 'This is a short description'
+
+      await userEvent.type(input, userInput)
+      await waitFor(() => expect(args.onChange).toHaveBeenCalledTimes(userInput.length))
+   },
+}
+
+export const Ghost: Story = {
+   args: {
+      hierarchy: Hierarchy.Ghost,
+      type: Type.Text,
+      placeholder: 'Insert text'
+   },
+   play: async ({ canvasElement, args }) => {
+      const canvas = within(canvasElement)
+
+      const input = canvas.getByRole('textbox')
+      await waitFor(() => expect(input).toBeVisible())
+      expect(input).toHaveAttribute('placeholder', args.placeholder)
+
+      const userInput = 'test'
 
       await userEvent.type(input, userInput)
       await waitFor(() => expect(args.onChange).toHaveBeenCalledTimes(userInput.length))
