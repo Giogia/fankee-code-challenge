@@ -7,6 +7,7 @@ export interface ButtonProps extends ComponentProps<'button'> {
    * Indicates the button hierarchy:
    * - Primary: the button is the primary call to action on the page.
    * - Neutral: the button is a generic call to action on the page.
+   * - Ghost: the button is a subtle call to action on the page.
    */
   hierarchy?: Hierarchy
   /**
