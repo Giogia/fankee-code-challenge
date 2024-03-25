@@ -6,6 +6,7 @@ import { CardProps } from './Card.props'
  * UI component for presenting data
  */
 export const Card = ({
+   bordered = true,
    className,
    header,
    body,
@@ -16,9 +17,9 @@ export const Card = ({
       <div
          className={classNames([
             'flex flex-col gap-10 p-10 pb-8',
-            'bg-transparent border-2 border-gray-400/25 rounded-lg shadow-md',
+            'bg-transparent rounded-lg',
+            bordered && 'border-2 border-gray-400/20 shadow-md halo',
             'w-full min-w-min',
-            'halo',
             'animate-in-up',
             className
          ])}

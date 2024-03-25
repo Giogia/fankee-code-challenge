@@ -45,7 +45,7 @@ exports[`User renders correctly 1`] = `
       novalidate=""
     >
       <div
-        class="flex flex-col gap-10 p-10 pb-8 bg-transparent border-2 border-gray-400/25 rounded-lg shadow-md w-full min-w-min halo animate-in-up animate-in-up"
+        class="flex flex-col gap-10 p-10 pb-8 bg-transparent rounded-lg border-2 border-gray-400/20 shadow-md halo w-full min-w-min animate-in-up animate-in-up"
         data-testid="card"
       >
         <div
@@ -131,7 +131,7 @@ exports[`User renders correctly 1`] = `
         </div>
       </div>
       <div
-        class="flex flex-col gap-10 p-10 pb-8 bg-transparent border-2 border-gray-400/25 rounded-lg shadow-md w-full min-w-min halo animate-in-up animate-in-up"
+        class="flex flex-col gap-10 p-10 pb-8 bg-transparent rounded-lg border-2 border-gray-400/20 shadow-md halo w-full min-w-min animate-in-up animate-in-up"
         data-testid="card"
       >
         <div

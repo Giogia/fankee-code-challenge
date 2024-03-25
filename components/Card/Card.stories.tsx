@@ -38,3 +38,18 @@ export const Base: Story = {
       expect(canvas.getByText('Actions')).toBeVisible()
    },
 }
+
+export const NoBorder: Story = {
+   args: {
+      bordered: false
+   },
+   play: async ({ canvasElement }) => {
+      const canvas = within(canvasElement)
+
+      await waitFor(() => expect(canvas.getByTestId('card')).toBeVisible())
+
+      expect(canvas.getByText('Header')).toBeVisible()
+      expect(canvas.getByText('Body')).toBeVisible()
+      expect(canvas.getByText('Actions')).toBeVisible()
+   },
+}
