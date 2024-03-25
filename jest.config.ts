@@ -3,7 +3,7 @@
  * https://jestjs.io/docs/configuration
  */
 
-import type {Config} from 'jest'
+import type { Config } from 'jest'
 
 import nextJest from 'next/jest.js'
 
@@ -19,6 +19,9 @@ const config: Config = {
       '/node_modules/'
    ],
    coverageProvider: 'v8',
+   setupFilesAfterEnv: [
+      '<rootDir>/setupTests.ts'
+   ],
    testEnvironment: 'jsdom',
 }
 
