@@ -12,11 +12,11 @@ export interface InputProps extends ComponentProps<'input'> {
   /**
    * Placeholder text for the input field.
    */
-  placeholder: string
+  placeholder?: string
   /**
    * Specifies the type of input.
    */
-  type: Type
+  type?: Type
   /**
    * The current value of the input field.
    */
