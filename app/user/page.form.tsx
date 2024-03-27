@@ -21,9 +21,18 @@ export function UserForm({ profile }: { profile: Profile }) {
 
    return (
       <form className='flex flex-col h-full justify-center gap-8 w-full max-w-6xl' noValidate={true}>
-         <Input className='invisible absolute w-0 h-0' id='email' name='email' defaultValue={profile?.email} />
+         <Input
+            className='invisible absolute w-0 h-0'
+            id='email'
+            name='email'
+            defaultValue={profile?.email}
+         />
          {error &&
-            <Typography className='flex w-full justify-center animate-in-up' text={error} color={Red} />
+            <Typography
+               className='flex w-full justify-center animate-in-up'
+               text={error}
+               color={Red}
+            />
          }
          <Card
             className='animate-in-up'
