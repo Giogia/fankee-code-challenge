@@ -1,12 +1,10 @@
 'use client'
 
-import classNames from 'classnames'
 import Image from 'next/image'
 import Link from 'next/link'
 
 import { Profile } from '@/actions/user.types'
 import { Typography } from '@/components/Typography'
-import { MOBILE, useMediaQuery } from '@/hooks/useMediaQuery'
 
 import Fankee from '../../public/fankee.svg'
 
@@ -17,13 +15,8 @@ const DESCRIPTION = 'All you need to do is create a profile and upload your winn
 
 export const Header = ({ email }: Profile) => {
 
-   const isMobile = useMediaQuery(MOBILE)
-
    return (
-      <div className={classNames([
-         'flex justify-between w-full',
-         isMobile && 'flex-col gap-4'
-      ])}>
+      <div className={'flex justify-between w-full'}>
          <Link href='/'>
             <Image priority src={Fankee} alt='Fankee Logo' />
          </Link>
