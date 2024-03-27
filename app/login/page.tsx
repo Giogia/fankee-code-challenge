@@ -7,7 +7,7 @@ import { useFormState } from 'react-dom'
 
 import { signIn } from '@/actions/auth'
 import { Card } from '@/components/Card'
-import { useMediaQuery } from '@/hooks/useMediaQuery'
+import { DESKTOP, useMediaQuery } from '@/hooks/useMediaQuery'
 
 import Fankee from '../../public/fankee.svg'
 
@@ -18,7 +18,7 @@ export default function Login() {
 
    const [{ message, error }, formAction] = useFormState(signIn, { message: '' })
 
-   const isDesktop = useMediaQuery('only screen and (min-device-width : 480px')
+   const isDesktop = useMediaQuery(DESKTOP)
 
    return (
       <main className={classNames([
