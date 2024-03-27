@@ -6,7 +6,7 @@ exports[`User renders correctly 1`] = `
     class="flex min-h-screen w-full flex-col items-center gap-12 justify-start p-6 animate-in"
   >
     <div
-      class="flex justify-between w-full"
+      class="flex justify-between w-full flex-col gap-4"
     >
       <a
         href="/"
@@ -23,6 +23,12 @@ exports[`User renders correctly 1`] = `
           width="40"
         />
       </a>
+      <p
+        class="text-xs text-thin text-white overflow-ellipsis animate-in p-2"
+        style="font-family: Arial;"
+      >
+        mail@user.com
+      </p>
     </div>
     <div
       class="flex flex-col justify-center w-full  max-w-4xl"
@@ -44,6 +50,13 @@ exports[`User renders correctly 1`] = `
       class="flex flex-col h-full justify-center gap-8 w-full max-w-6xl"
       novalidate=""
     >
+      <input
+        class="invisible absolute w-0 h-0"
+        id="email"
+        name="email"
+        type="text"
+        value="mail@user.com"
+      />
       <div
         class="flex flex-col gap-10 p-10 pb-8 bg-transparent rounded-lg border-2 border-gray-400/20 shadow-md halo w-full min-w-min animate-in-up animate-in-up"
         data-testid="card"

@@ -1,9 +1,10 @@
 'use client'
 
+import { Profile } from '@/actions/user.types'
 import { Input } from '@/components/Input'
 import { Typography } from '@/components/Typography'
 
-const { Text, TextArea } = Input.Type
+const { TextArea } = Input.Type
 const { H2, BodyM } = Typography.Hierarchy
 
 const TITLE = 'Personal Info'
@@ -22,7 +23,7 @@ export const Header = (
    </div>
 )
 
-export const Body = () => (
+export const Body = ({ name, description }: Profile) => (
    <div className='flex flex-col gap-6'>
       <div className='flex flex-col gap-4'>
          <Typography className='pl-2' hierarchy={BodyM} text={NAME} />
@@ -30,7 +31,7 @@ export const Body = () => (
             id='name'
             name='name'
             placeholder={INSERT_NAME}
-            type={Text}
+            defaultValue={name}
          />
       </div>
       <div className='flex flex-col gap-4'>
@@ -40,6 +41,7 @@ export const Body = () => (
             name='description'
             placeholder={INSERT_DESCRIPTION}
             type={TextArea}
+            defaultValue={description}
          />
       </div>
    </div>

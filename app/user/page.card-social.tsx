@@ -1,9 +1,9 @@
 'use client'
 
+import { Profile } from '@/actions/user.types'
 import { Input } from '@/components/Input'
 import { Typography } from '@/components/Typography'
 
-const { Text } = Input.Type
 const { H2, BodyM } = Typography.Hierarchy
 
 const TITLE = 'Social'
@@ -28,7 +28,7 @@ export const Header = (
    </div>
 )
 
-export const Body = () => (
+export const Body = ({ instagram, x, facebook, tiktok }: Profile) => (
    <div className='grid-2 gap-6'>
       <div className='flex flex-col gap-4'>
          <Typography className='pl-2' hierarchy={BodyM} text={INSTAGRAM} />
@@ -36,7 +36,7 @@ export const Body = () => (
             id='instagram'
             name='instagram'
             placeholder={INSERT_INSTAGRAM}
-            type={Text}
+            defaultValue={instagram}
          />
       </div>
       <div className='flex flex-col gap-4'>
@@ -45,7 +45,7 @@ export const Body = () => (
             id='x'
             name='x'
             placeholder={INSERT_X}
-            type={Text}
+            defaultValue={x}
          />
       </div>
       <div className='flex flex-col gap-4'>
@@ -54,7 +54,7 @@ export const Body = () => (
             id='facebook'
             name='facebook'
             placeholder={INSERT_FACEBOOK}
-            type={Text}
+            defaultValue={facebook}
          />
       </div>
       <div className='flex flex-col gap-4'>
@@ -63,7 +63,7 @@ export const Body = () => (
             id='tiktok'
             name='tiktok'
             placeholder={INSERT_TIKTOK}
-            type={Text}
+            defaultValue={tiktok}
          />
       </div>
    </div>

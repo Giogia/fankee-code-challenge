@@ -15,7 +15,8 @@ const CONTINUE_AS = 'Continue as'
 
 export function AuthButton() {
 
-   const {data: {user}} = use(getUser())
+   const { data } = use(getUser())
+   const { user } = data ?? {}
 
    return (
       <Link className='flex justify-center w-full' href={user ? '/user' : '/login'}>

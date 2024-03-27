@@ -1,42 +1,25 @@
 import { redirect } from 'next/navigation'
 import { use } from 'react'
 
-import { Card } from '@/components/Card'
-import { createClient } from '@/utils/supabase/server'
+import { getUser } from '@/actions/user'
 
-import { SaveButton } from './page.button'
-import { Header as PersonalCardHeader, Body as PersonalCardBody } from './page.card-personal'
-import { Header as SocialCardHeader, Body as SocialCardBody } from './page.card-social'
-import { Header as PageHeader, Title as PageTitle } from './page.header'
+import { UserForm } from './page.form'
+import { Header, Title } from './page.header'
 
 export default function User() {
 
-   const supabase = createClient()
+   const { data, error: authError } = use(getUser())
+   const { user, profile } = data ?? {}
 
-   const { data, error } = use(supabase.auth.getUser())
-
-   if (error || !data?.user) {
+   if (authError || !user) {
       redirect('/')
    }
 
    return (
       <main className='flex min-h-screen w-full flex-col items-center gap-12 justify-start p-6 animate-in'>
-         {PageHeader}
-         {PageTitle}
-         <form className='flex flex-col h-full justify-center gap-8 w-full max-w-6xl' noValidate={true}>
-            <Card
-               className='animate-in-up'
-               header={PersonalCardHeader}
-               body={<PersonalCardBody />}
-               actions={<SaveButton formAction={undefined} hasSaved={false} />}
-            />
-            <Card
-               className='animate-in-up'
-               header={SocialCardHeader}
-               body={<SocialCardBody />}
-               actions={<SaveButton formAction={undefined} hasSaved={false} />}
-            />
-         </form>
+         <Header email={user.email!} />
+         {Title}
+         <UserForm profile={{ ...profile, email: user.email! }} />
       </main>
    )
 }
