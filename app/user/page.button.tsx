@@ -1,5 +1,6 @@
 'use client'
 
+import { useEffect, useState } from 'react'
 import { useFormStatus } from 'react-dom'
 
 import { Button } from '@/components/Button'
@@ -18,7 +19,13 @@ interface SaveButtonProps extends ButtonProps {
 export function SaveButton({ hasSaved, ...props }: SaveButtonProps) {
 
    const { pending, action } = useFormStatus()
-   
+
+   const [clicked, setClicked] = useState(false)
+
+   useEffect(() => {
+      if (clicked) setTimeout(() => setClicked(false), 4000)
+   }, [clicked, setClicked])
+
    const isLoading = pending && action === props.formAction
 
    return (
@@ -27,7 +34,8 @@ export function SaveButton({ hasSaved, ...props }: SaveButtonProps) {
             {...props}
             hierarchy={Neutral}
             disabled={isLoading || hasSaved}
-            label={isLoading ? SAVING : (hasSaved ? SAVED : SAVE)}
+            label={clicked && isLoading ? SAVING : (clicked || hasSaved ? SAVED : SAVE)}
+            onClick={() => setClicked(true)}
          />
       </div>
    )
